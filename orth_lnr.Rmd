@@ -1,0 +1,58 @@
+---
+title: "Orthogonality under linear case"
+author: "Wenying Deng"
+date: "8/12/2019"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Verify the orthogonality between $g$ and $\mathbf{v}$ under linear case.
+```{r}
+library(numDeriv)
+n <- 1e2
+p <- 6
+
+# generate beta
+beta <- rnorm(p)
+g <- sqrt(sum(beta^2))
+v <- beta / g
+w_true <- c(g, v)
+
+# generate data
+n_simu <- 1e5
+
+simu_hessian <- function(){
+  X <- svd(matrix(rnorm(n*p), ncol = p))$u
+  f <- X %*% beta
+  y <- f + rnorm(n)
+  
+  #
+  loss_func <- function(w){
+    # rememeber to divide the regression coefficient
+    # by its norm sqrt(sum(w[-1]^2))
+    sum((y - w[1] * X %*% w[-1] / sqrt(sum(w[-1]^2)))^2)
+  }
+  
+  hessian(loss_func, x = w_true)
+}
+
+
+hess_list <- list()
+# pb <- txtProgressBar(1, n_simu, style = 3)
+for (i in 1:n_simu){
+  # setTxtProgressBar(pb, i)
+  hess_list[[i]] <- simu_hessian()
+}
+
+# compute expected fisher information
+expected_fisher <- Reduce("+", hess_list) / n_simu
+expected_fisher
+```
+
+The fisher information for $g$ and $\mathbf{v}$ should be zero. To verify this, we did simulation for 100,000 times and computed the average of the empirical fisher information. Results show that the expected fisher information is zero.
+
+
+
