@@ -1,0 +1,270 @@
+WARNING:tensorflow:From /home/wd45/fBNN/gpflowSlim/misc.py:24: The name tf.GraphKeys is deprecated. Please use tf.compat.v1.GraphKeys instead.
+
+WARNING:tensorflow:From exp/toy.py:60: The name tf.variable_scope is deprecated. Please use tf.compat.v1.variable_scope instead.
+
+WARNING:tensorflow:From /home/wd45/fBNN/gpflowSlim/params.py:143: The name tf.get_variable is deprecated. Please use tf.compat.v1.get_variable instead.
+
+/home/wd45/fBNN/zhusuan/framework/utils.py:116: FutureWarning: The `reuse()` function has been renamed to `reuse_variables()`, `reuse()` will be removed in the coming version (0.4.1)
+  FutureWarning)
+WARNING:tensorflow:From /home/wd45/fBNN/zhusuan/framework/utils.py:106: The name tf.make_template is deprecated. Please use tf.compat.v1.make_template instead.
+
+WARNING:tensorflow:From /home/wd45/fBNN/core/fvi.py:36: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+WARNING:tensorflow:From /home/wd45/fBNN/core/fvi.py:65: to_float (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.cast` instead.
+WARNING:tensorflow:From /home/wd45/fBNN/core/fvi.py:65: Normal.__init__ (from tensorflow.python.ops.distributions.normal) is deprecated and will be removed after 2019-01-01.
+Instructions for updating:
+The TensorFlow Distributions library has moved to TensorFlow Probability (https://github.com/tensorflow/probability). You should update all references to use `tfp.distributions` instead of `tf.distributions`.
+WARNING:tensorflow:From /home/wd45/deng_env/lib/python3.6/site-packages/tensorflow/python/ops/distributions/normal.py:160: Distribution.__init__ (from tensorflow.python.ops.distributions.distribution) is deprecated and will be removed after 2019-01-01.
+Instructions for updating:
+The TensorFlow Distributions library has moved to TensorFlow Probability (https://github.com/tensorflow/probability). You should update all references to use `tfp.distributions` instead of `tf.distributions`.
+WARNING:tensorflow:From /home/wd45/deng_env/lib/python3.6/site-packages/tensorflow/python/ops/math_ops.py:2403: add_dispatch_support.<locals>.wrapper (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+WARNING:tensorflow:From /home/wd45/fBNN/core/grad_estimator/spectral.py:107: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.cast` instead.
+WARNING:tensorflow:From /home/wd45/fBNN/core/fvi.py:135: MultivariateNormalFullCovariance.__init__ (from tensorflow.contrib.distributions.python.ops.mvn_full_covariance) is deprecated and will be removed after 2018-10-01.
+Instructions for updating:
+The TensorFlow Distributions library has moved to TensorFlow Probability (https://github.com/tensorflow/probability). You should update all references to use `tfp.distributions` instead of `tf.contrib.distributions`.
+WARNING:tensorflow:From /home/wd45/deng_env/lib/python3.6/site-packages/tensorflow/contrib/distributions/python/ops/mvn_full_covariance.py:195: MultivariateNormalTriL.__init__ (from tensorflow.contrib.distributions.python.ops.mvn_tril) is deprecated and will be removed after 2018-10-01.
+Instructions for updating:
+The TensorFlow Distributions library has moved to TensorFlow Probability (https://github.com/tensorflow/probability). You should update all references to use `tfp.distributions` instead of `tf.contrib.distributions`.
+WARNING:tensorflow:From /home/wd45/deng_env/lib/python3.6/site-packages/tensorflow/contrib/distributions/python/ops/mvn_tril.py:222: MultivariateNormalLinearOperator.__init__ (from tensorflow.contrib.distributions.python.ops.mvn_linear_operator) is deprecated and will be removed after 2018-10-01.
+Instructions for updating:
+The TensorFlow Distributions library has moved to TensorFlow Probability (https://github.com/tensorflow/probability). You should update all references to use `tfp.distributions` instead of `tf.contrib.distributions`.
+WARNING:tensorflow:From /home/wd45/deng_env/lib/python3.6/site-packages/tensorflow/contrib/distributions/python/ops/mvn_linear_operator.py:201: AffineLinearOperator.__init__ (from tensorflow.contrib.distributions.python.ops.bijectors.affine_linear_operator) is deprecated and will be removed after 2018-10-01.
+Instructions for updating:
+The TensorFlow Distributions library has moved to TensorFlow Probability (https://github.com/tensorflow/probability). You should update all references to use `tfp.distributions` instead of `tf.contrib.distributions`.
+WARNING:tensorflow:From /home/wd45/deng_env/lib/python3.6/site-packages/tensorflow/contrib/distributions/python/ops/bijectors/affine_linear_operator.py:158: _DistributionShape.__init__ (from tensorflow.contrib.distributions.python.ops.shape) is deprecated and will be removed after 2018-10-01.
+Instructions for updating:
+The TensorFlow Distributions library has moved to TensorFlow Probability (https://github.com/tensorflow/probability). You should update all references to use `tfp.distributions` instead of `tf.contrib.distributions`.
+WARNING:tensorflow:From /home/wd45/deng_env/lib/python3.6/site-packages/tensorflow/contrib/distributions/python/ops/mvn_linear_operator.py:205: TransformedDistribution.__init__ (from tensorflow.python.ops.distributions.transformed_distribution) is deprecated and will be removed after 2019-01-01.
+Instructions for updating:
+The TensorFlow Distributions library has moved to TensorFlow Probability (https://github.com/tensorflow/probability). You should update all references to use `tfp.distributions` instead of `tf.distributions`.
+WARNING:tensorflow:From /home/wd45/fBNN/core/fvi.py:136: to_double (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.cast` instead.
+WARNING:tensorflow:From /home/wd45/fBNN/core/fvi.py:93: The name tf.train.AdamOptimizer is deprecated. Please use tf.compat.v1.train.AdamOptimizer instead.
+
+2019-10-23 18:03:45.000953: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+2019-10-23 18:03:45.008891: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2600030000 Hz
+2019-10-23 18:03:45.009004: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x58e8180 executing computations on platform Host. Devices:
+2019-10-23 18:03:45.009014: I tensorflow/compiler/xla/service/service.cc:175]   StreamExecutor device (0): <undefined>, <undefined>
+2019-10-23 18:03:45.253877: W tensorflow/compiler/jit/mark_for_compilation_pass.cc:1412] (One-time warning): Not using XLA:CPU for cluster because envvar TF_XLA_FLAGS=--tf_xla_cpu_global_jit was not set.  If you want XLA:CPU, either set that envvar, or use experimental_jit_scope to enable XLA:CPU.  To confirm that XLA is active, pass --vmodule=xla_compilation_cache=1 (as a proper command-line flag, not via TF_XLA_FLAGS) or set the envvar XLA_FLAGS=--xla_hlo_profile.
+WARNING:tensorflow:From exp/toy.py:85: The name tf.train.Saver is deprecated. Please use tf.compat.v1.train.Saver instead.
+
+>>> Pretrain GP Epoch     0/10000: Loss=340.56676
+>>> Pretrain GP Epoch   100/10000: Loss=193.56985
+>>> Pretrain GP Epoch   200/10000: Loss=20.82076
+>>> Pretrain GP Epoch   300/10000: Loss=17.20011
+>>> Pretrain GP Epoch   400/10000: Loss=15.82578
+>>> Pretrain GP Epoch   500/10000: Loss=15.08125
+>>> Pretrain GP Epoch   600/10000: Loss=14.59799
+>>> Pretrain GP Epoch   700/10000: Loss=14.24406
+>>> Pretrain GP Epoch   800/10000: Loss=13.95843
+>>> Pretrain GP Epoch   900/10000: Loss=13.70488
+>>> Pretrain GP Epoch  1000/10000: Loss=13.45986
+>>> Pretrain GP Epoch  1100/10000: Loss=13.20894
+>>> Pretrain GP Epoch  1200/10000: Loss=12.94443
+>>> Pretrain GP Epoch  1300/10000: Loss=12.66320
+>>> Pretrain GP Epoch  1400/10000: Loss=12.36512
+>>> Pretrain GP Epoch  1500/10000: Loss=12.05219
+>>> Pretrain GP Epoch  1600/10000: Loss=11.72815
+>>> Pretrain GP Epoch  1700/10000: Loss=11.39824
+>>> Pretrain GP Epoch  1800/10000: Loss=11.06891
+>>> Pretrain GP Epoch  1900/10000: Loss=10.74724
+>>> Pretrain GP Epoch  2000/10000: Loss=10.44015
+>>> Pretrain GP Epoch  2100/10000: Loss=10.15346
+>>> Pretrain GP Epoch  2200/10000: Loss=9.89124
+>>> Pretrain GP Epoch  2300/10000: Loss=9.65559
+>>> Pretrain GP Epoch  2400/10000: Loss=9.44675
+>>> Pretrain GP Epoch  2500/10000: Loss=9.26353
+>>> Pretrain GP Epoch  2600/10000: Loss=9.10375
+>>> Pretrain GP Epoch  2700/10000: Loss=8.96472
+>>> Pretrain GP Epoch  2800/10000: Loss=8.84356
+>>> Pretrain GP Epoch  2900/10000: Loss=8.73749
+>>> Pretrain GP Epoch  3000/10000: Loss=8.64398
+>>> Pretrain GP Epoch  3100/10000: Loss=8.56081
+>>> Pretrain GP Epoch  3200/10000: Loss=8.48615
+>>> Pretrain GP Epoch  3300/10000: Loss=8.41848
+>>> Pretrain GP Epoch  3400/10000: Loss=8.35662
+>>> Pretrain GP Epoch  3500/10000: Loss=8.29962
+>>> Pretrain GP Epoch  3600/10000: Loss=8.24678
+>>> Pretrain GP Epoch  3700/10000: Loss=8.19758
+>>> Pretrain GP Epoch  3800/10000: Loss=8.15162
+>>> Pretrain GP Epoch  3900/10000: Loss=8.10864
+>>> Pretrain GP Epoch  4000/10000: Loss=8.06845
+>>> Pretrain GP Epoch  4100/10000: Loss=8.03090
+>>> Pretrain GP Epoch  4200/10000: Loss=7.99591
+>>> Pretrain GP Epoch  4300/10000: Loss=7.96339
+>>> Pretrain GP Epoch  4400/10000: Loss=7.93327
+>>> Pretrain GP Epoch  4500/10000: Loss=7.90546
+>>> Pretrain GP Epoch  4600/10000: Loss=7.87987
+>>> Pretrain GP Epoch  4700/10000: Loss=7.85640
+>>> Pretrain GP Epoch  4800/10000: Loss=7.83494
+>>> Pretrain GP Epoch  4900/10000: Loss=7.81535
+>>> Pretrain GP Epoch  5000/10000: Loss=7.79752
+>>> Pretrain GP Epoch  5100/10000: Loss=7.78132
+>>> Pretrain GP Epoch  5200/10000: Loss=7.76660
+>>> Pretrain GP Epoch  5300/10000: Loss=7.75325
+>>> Pretrain GP Epoch  5400/10000: Loss=7.74114
+>>> Pretrain GP Epoch  5500/10000: Loss=7.73016
+>>> Pretrain GP Epoch  5600/10000: Loss=7.72020
+>>> Pretrain GP Epoch  5700/10000: Loss=7.71115
+>>> Pretrain GP Epoch  5800/10000: Loss=7.70293
+>>> Pretrain GP Epoch  5900/10000: Loss=7.69546
+>>> Pretrain GP Epoch  6000/10000: Loss=7.68866
+>>> Pretrain GP Epoch  6100/10000: Loss=7.68247
+>>> Pretrain GP Epoch  6200/10000: Loss=7.67681
+>>> Pretrain GP Epoch  6300/10000: Loss=7.67164
+>>> Pretrain GP Epoch  6400/10000: Loss=7.66691
+>>> Pretrain GP Epoch  6500/10000: Loss=7.66258
+>>> Pretrain GP Epoch  6600/10000: Loss=7.65861
+>>> Pretrain GP Epoch  6700/10000: Loss=7.65496
+>>> Pretrain GP Epoch  6800/10000: Loss=7.65160
+>>> Pretrain GP Epoch  6900/10000: Loss=7.64850
+>>> Pretrain GP Epoch  7000/10000: Loss=7.64564
+>>> Pretrain GP Epoch  7100/10000: Loss=7.64301
+>>> Pretrain GP Epoch  7200/10000: Loss=7.64057
+>>> Pretrain GP Epoch  7300/10000: Loss=7.63831
+>>> Pretrain GP Epoch  7400/10000: Loss=7.63621
+>>> Pretrain GP Epoch  7500/10000: Loss=7.63427
+>>> Pretrain GP Epoch  7600/10000: Loss=7.63247
+>>> Pretrain GP Epoch  7700/10000: Loss=7.63079
+>>> Pretrain GP Epoch  7800/10000: Loss=7.62922
+>>> Pretrain GP Epoch  7900/10000: Loss=7.62777
+>>> Pretrain GP Epoch  8000/10000: Loss=7.62641
+>>> Pretrain GP Epoch  8100/10000: Loss=7.62514
+>>> Pretrain GP Epoch  8200/10000: Loss=7.62395
+>>> Pretrain GP Epoch  8300/10000: Loss=7.62284
+>>> Pretrain GP Epoch  8400/10000: Loss=7.62181
+>>> Pretrain GP Epoch  8500/10000: Loss=7.62083
+>>> Pretrain GP Epoch  8600/10000: Loss=7.61992
+>>> Pretrain GP Epoch  8700/10000: Loss=7.61907
+>>> Pretrain GP Epoch  8800/10000: Loss=7.61827
+>>> Pretrain GP Epoch  8900/10000: Loss=7.61752
+>>> Pretrain GP Epoch  9000/10000: Loss=7.61681
+>>> Pretrain GP Epoch  9100/10000: Loss=7.61614
+>>> Pretrain GP Epoch  9200/10000: Loss=7.61552
+>>> Pretrain GP Epoch  9300/10000: Loss=7.61493
+>>> Pretrain GP Epoch  9400/10000: Loss=7.61437
+>>> Pretrain GP Epoch  9500/10000: Loss=7.61385
+>>> Pretrain GP Epoch  9600/10000: Loss=7.61336
+>>> Pretrain GP Epoch  9700/10000: Loss=7.61289
+>>> Pretrain GP Epoch  9800/10000: Loss=7.61246
+>>> Pretrain GP Epoch  9900/10000: Loss=7.61204
+>>> Epoch     0/50000 | elbo_sur=-94378.11719 | logLL=-3511.55688 | kl_sur=1817331.25000
+/home/wd45/deng_env/lib/python3.6/site-packages/matplotlib/cbook/__init__.py:424: MatplotlibDeprecationWarning: 
+Passing one of 'on', 'true', 'off', 'false' as a boolean is deprecated; use an actual boolean (True/False) instead.
+  warn_deprecated("2.2", "Passing one of 'on', 'true', 'off', 'false' as a "
+>>> Epoch   100/50000 | elbo_sur=-3835.24316 | logLL=-99.18134 | kl_sur=74721.23438
+>>> Epoch   200/50000 | elbo_sur=-2044.14795 | logLL=-51.51322 | kl_sur=39852.69531
+>>> Epoch   300/50000 | elbo_sur=-1126.00366 | logLL=-37.80212 | kl_sur=21764.03125
+>>> Epoch   400/50000 | elbo_sur=-731.63550 | logLL=-30.34374 | kl_sur=14025.83496
+>>> Epoch   500/50000 | elbo_sur=-477.17172 | logLL=-28.94913 | kl_sur=8964.45215
+WARNING:tensorflow:From /home/wd45/deng_env/lib/python3.6/site-packages/tensorflow/python/training/saver.py:960: remove_checkpoint (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to delete files with this prefix.
+>>> Epoch   600/50000 | elbo_sur=-274.43463 | logLL=-25.32991 | kl_sur=4982.09424
+>>> Epoch   700/50000 | elbo_sur=-250.69440 | logLL=-24.12780 | kl_sur=4531.33203
+>>> Epoch   800/50000 | elbo_sur=-229.94991 | logLL=-23.89778 | kl_sur=4121.04248
+>>> Epoch   900/50000 | elbo_sur=-139.27641 | logLL=-23.43801 | kl_sur=2316.76807
+>>> Epoch  1000/50000 | elbo_sur=-126.86749 | logLL=-22.61918 | kl_sur=2084.96631
+>>> Epoch  1100/50000 | elbo_sur=-83.46372 | logLL=-22.72335 | kl_sur=1214.80737
+>>> Epoch  1200/50000 | elbo_sur=-79.45355 | logLL=-22.40095 | kl_sur=1141.05200
+>>> Epoch  1300/50000 | elbo_sur=-78.02687 | logLL=-22.24963 | kl_sur=1115.54480
+>>> Epoch  1400/50000 | elbo_sur=-62.03029 | logLL=-22.06701 | kl_sur=799.26556
+>>> Epoch  1500/50000 | elbo_sur=-53.27773 | logLL=-22.17601 | kl_sur=622.03424
+>>> Epoch  1600/50000 | elbo_sur=-43.01201 | logLL=-21.92141 | kl_sur=421.81186
+>>> Epoch  1700/50000 | elbo_sur=-36.51073 | logLL=-21.90276 | kl_sur=292.15948
+>>> Epoch  1800/50000 | elbo_sur=-36.76002 | logLL=-21.83751 | kl_sur=298.45013
+>>> Epoch  1900/50000 | elbo_sur=-34.06818 | logLL=-21.78518 | kl_sur=245.65993
+>>> Epoch  2000/50000 | elbo_sur=-33.81333 | logLL=-21.81288 | kl_sur=240.00903
+>>> Epoch  2100/50000 | elbo_sur=-29.18026 | logLL=-21.80413 | kl_sur=147.52274
+>>> Epoch  2200/50000 | elbo_sur=-24.52262 | logLL=-21.63192 | kl_sur=57.81406
+>>> Epoch  2300/50000 | elbo_sur=-26.30013 | logLL=-21.65285 | kl_sur=92.94563
+>>> Epoch  2400/50000 | elbo_sur=-25.93227 | logLL=-21.63091 | kl_sur=86.02703
+>>> Epoch  2500/50000 | elbo_sur=-24.05831 | logLL=-21.61488 | kl_sur=48.86862
+>>> Epoch  2600/50000 | elbo_sur=-23.05196 | logLL=-21.63915 | kl_sur=28.25616
+>>> Epoch  2700/50000 | elbo_sur=-22.58851 | logLL=-21.60697 | kl_sur=19.63088
+>>> Epoch  2800/50000 | elbo_sur=-20.73570 | logLL=-21.59739 | kl_sur=-17.23387
+>>> Epoch  2900/50000 | elbo_sur=-20.46973 | logLL=-21.59476 | kl_sur=-22.50053
+>>> Epoch  3000/50000 | elbo_sur=-19.18598 | logLL=-21.54029 | kl_sur=-47.08621
+>>> Epoch  3100/50000 | elbo_sur=-19.32782 | logLL=-21.55979 | kl_sur=-44.63943
+>>> Epoch  3200/50000 | elbo_sur=-17.47511 | logLL=-21.54434 | kl_sur=-81.38445
+>>> Epoch  3300/50000 | elbo_sur=-17.44971 | logLL=-21.53893 | kl_sur=-81.78434
+>>> Epoch  3400/50000 | elbo_sur=-17.43509 | logLL=-21.52694 | kl_sur=-81.83701
+>>> Epoch  3500/50000 | elbo_sur=-16.25372 | logLL=-21.50372 | kl_sur=-104.99995
+>>> Epoch  3600/50000 | elbo_sur=-17.07660 | logLL=-21.52811 | kl_sur=-89.03032
+>>> Epoch  3700/50000 | elbo_sur=-16.11864 | logLL=-21.48675 | kl_sur=-107.36214
+>>> Epoch  3800/50000 | elbo_sur=-16.37593 | logLL=-21.51051 | kl_sur=-102.69147
+>>> Epoch  3900/50000 | elbo_sur=-15.68540 | logLL=-21.51303 | kl_sur=-116.55272
+>>> Epoch  4000/50000 | elbo_sur=-15.71740 | logLL=-21.49560 | kl_sur=-115.56393
+>>> Epoch  4100/50000 | elbo_sur=-14.88840 | logLL=-21.51007 | kl_sur=-132.43346
+>>> Epoch  4200/50000 | elbo_sur=-15.56843 | logLL=-21.50068 | kl_sur=-118.64481
+>>> Epoch  4300/50000 | elbo_sur=-14.81682 | logLL=-21.49275 | kl_sur=-133.51859
+>>> Epoch  4400/50000 | elbo_sur=-14.82259 | logLL=-21.48831 | kl_sur=-133.31442
+>>> Epoch  4500/50000 | elbo_sur=-14.76918 | logLL=-21.48229 | kl_sur=-134.26225
+>>> Epoch  4600/50000 | elbo_sur=-14.36284 | logLL=-21.46778 | kl_sur=-142.09862
+>>> Epoch  4700/50000 | elbo_sur=-14.70178 | logLL=-21.46618 | kl_sur=-135.28793
+>>> Epoch  4800/50000 | elbo_sur=-14.13770 | logLL=-21.48763 | kl_sur=-146.99860
+>>> Epoch  4900/50000 | elbo_sur=-13.76861 | logLL=-21.48213 | kl_sur=-154.27042
+>>> Epoch  5000/50000 | elbo_sur=-14.62100 | logLL=-21.48809 | kl_sur=-137.34193
+>>> Epoch  5100/50000 | elbo_sur=-14.03135 | logLL=-21.49827 | kl_sur=-149.33829
+>>> Epoch  5200/50000 | elbo_sur=-14.02254 | logLL=-21.47239 | kl_sur=-148.99690
+>>> Epoch  5300/50000 | elbo_sur=-13.77887 | logLL=-21.47604 | kl_sur=-153.94341
+>>> Epoch  5400/50000 | elbo_sur=-14.17731 | logLL=-21.47871 | kl_sur=-146.02786
+>>> Epoch  5500/50000 | elbo_sur=-13.83000 | logLL=-21.46698 | kl_sur=-152.73952
+>>> Epoch  5600/50000 | elbo_sur=-13.91380 | logLL=-21.47025 | kl_sur=-151.12906
+>>> Epoch  5700/50000 | elbo_sur=-14.11810 | logLL=-21.49668 | kl_sur=-147.57172
+>>> Epoch  5800/50000 | elbo_sur=-13.67876 | logLL=-21.47742 | kl_sur=-155.97321
+>>> Epoch  5900/50000 | elbo_sur=-13.59871 | logLL=-21.46540 | kl_sur=-157.33394
+>>> Epoch  6000/50000 | elbo_sur=-13.56465 | logLL=-21.46079 | kl_sur=-157.92276
+>>> Epoch  6100/50000 | elbo_sur=-13.83608 | logLL=-21.47580 | kl_sur=-152.79451
+>>> Epoch  6200/50000 | elbo_sur=-13.42509 | logLL=-21.46980 | kl_sur=-160.89413
+>>> Epoch  6300/50000 | elbo_sur=-13.46773 | logLL=-21.46390 | kl_sur=-159.92329
+>>> Epoch  6400/50000 | elbo_sur=-13.61596 | logLL=-21.47437 | kl_sur=-157.16827
+>>> Epoch  6500/50000 | elbo_sur=-13.67981 | logLL=-21.48106 | kl_sur=-156.02495
+>>> Epoch  6600/50000 | elbo_sur=-13.51066 | logLL=-21.47084 | kl_sur=-159.20361
+>>> Epoch  6700/50000 | elbo_sur=-13.10677 | logLL=-21.47065 | kl_sur=-167.27757
+>>> Epoch  6800/50000 | elbo_sur=-14.44105 | logLL=-21.47893 | kl_sur=-140.75754
+>>> Epoch  6900/50000 | elbo_sur=-13.15921 | logLL=-21.46022 | kl_sur=-166.02032
+>>> Epoch  7000/50000 | elbo_sur=-13.58963 | logLL=-21.47495 | kl_sur=-157.70642
+>>> Epoch  7100/50000 | elbo_sur=-13.22032 | logLL=-21.46300 | kl_sur=-164.85350
+>>> Epoch  7200/50000 | elbo_sur=-13.30718 | logLL=-21.46991 | kl_sur=-163.25470
+>>> Epoch  7300/50000 | elbo_sur=-13.15658 | logLL=-21.46543 | kl_sur=-166.17694
+>>> Epoch  7400/50000 | elbo_sur=-13.38039 | logLL=-21.47616 | kl_sur=-161.91531
+>>> Epoch  7500/50000 | elbo_sur=-13.42931 | logLL=-21.47153 | kl_sur=-160.84422
+>>> Epoch  7600/50000 | elbo_sur=-12.96310 | logLL=-21.44995 | kl_sur=-169.73715
+>>> Epoch  7700/50000 | elbo_sur=-13.07449 | logLL=-21.46375 | kl_sur=-167.78528
+>>> Epoch  7800/50000 | elbo_sur=-13.10775 | logLL=-21.45667 | kl_sur=-166.97845
+>>> Epoch  7900/50000 | elbo_sur=-12.99434 | logLL=-21.46762 | kl_sur=-169.46556
+>>> Epoch  8000/50000 | elbo_sur=-13.42943 | logLL=-21.46360 | kl_sur=-160.68350
+>>> Epoch  8100/50000 | elbo_sur=-13.01354 | logLL=-21.45578 | kl_sur=-168.84476
+>>> Epoch  8200/50000 | elbo_sur=-13.18705 | logLL=-21.47190 | kl_sur=-165.69690
+>>> Epoch  8300/50000 | elbo_sur=-13.02999 | logLL=-21.46131 | kl_sur=-168.62628
+>>> Epoch  8400/50000 | elbo_sur=-13.14061 | logLL=-21.46005 | kl_sur=-166.38890
+>>> Epoch  8500/50000 | elbo_sur=-12.98109 | logLL=-21.46513 | kl_sur=-169.68079
+>>> Epoch  8600/50000 | elbo_sur=-13.14144 | logLL=-21.46899 | kl_sur=-166.55092
+>>> Epoch  8700/50000 | elbo_sur=-13.08247 | logLL=-21.46634 | kl_sur=-167.67740
+>>> Epoch  8800/50000 | elbo_sur=-12.92023 | logLL=-21.46138 | kl_sur=-170.82298
+>>> Epoch  8900/50000 | elbo_sur=-12.94887 | logLL=-21.46415 | kl_sur=-170.30562
+>>> Epoch  9000/50000 | elbo_sur=-12.90689 | logLL=-21.46048 | kl_sur=-171.07178
+>>> Epoch  9100/50000 | elbo_sur=-12.96901 | logLL=-21.46234 | kl_sur=-169.86667
+>>> Epoch  9200/50000 | elbo_sur=-13.02635 | logLL=-21.47452 | kl_sur=-168.96326
+>>> Epoch  9300/50000 | elbo_sur=-12.96975 | logLL=-21.46706 | kl_sur=-169.94630
+>>> Epoch  9400/50000 | elbo_sur=-13.14538 | logLL=-21.46670 | kl_sur=-166.42641
+>>> Epoch  9500/50000 | elbo_sur=-12.93317 | logLL=-21.46063 | kl_sur=-170.54926
+>>> Epoch  9600/50000 | elbo_sur=-12.90682 | logLL=-21.45984 | kl_sur=-171.06044
+>>> Epoch  9700/50000 | elbo_sur=-12.99934 | logLL=-21.46379 | kl_sur=-169.28915
+>>> Epoch  9800/50000 | elbo_sur=-13.07906 | logLL=-21.46644 | kl_sur=-167.74757
+>>> Epoch  9900/50000 | elbo_sur=-12.90464 | logLL=-21.46330 | kl_sur=-171.17337
+>>> Epoch 10000/50000 | elbo_sur=-12.90056 | logLL=-21.46458 | kl_sur=-171.28035
+>>> Epoch 10100/50000 | elbo_sur=-13.06734 | logLL=-21.46075 | kl_sur=-167.86818
+>>> Epoch 10200/50000 | elbo_sur=-12.88893 | logLL=-21.46238 | kl_sur=-171.46913
+>>> Epoch 10300/50000 | elbo_sur=-12.92603 | logLL=-21.46454 | kl_sur=-170.77011
+>>> Epoch 10400/50000 | elbo_sur=-12.97369 | logLL=-21.46841 | kl_sur=-169.89453
+>>> Epoch 10500/50000 | elbo_sur=-12.88342 | logLL=-21.46326 | kl_sur=-171.59695
+slurmstepd: error: *** JOB 54325996 ON compute-e-16-239 CANCELLED AT 2019-10-24T06:03:47 DUE TO TIME LIMIT ***

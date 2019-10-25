@@ -1,0 +1,167 @@
+WARNING:tensorflow:From /home/wd45/fBNN/gpflowSlim/misc.py:24: The name tf.GraphKeys is deprecated. Please use tf.compat.v1.GraphKeys instead.
+
+WARNING:tensorflow:From exp/toy_sin.py:60: The name tf.variable_scope is deprecated. Please use tf.compat.v1.variable_scope instead.
+
+WARNING:tensorflow:From /home/wd45/fBNN/gpflowSlim/params.py:143: The name tf.get_variable is deprecated. Please use tf.compat.v1.get_variable instead.
+
+/home/wd45/fBNN/zhusuan/framework/utils.py:116: FutureWarning: The `reuse()` function has been renamed to `reuse_variables()`, `reuse()` will be removed in the coming version (0.4.1)
+  FutureWarning)
+WARNING:tensorflow:From /home/wd45/fBNN/zhusuan/framework/utils.py:106: The name tf.make_template is deprecated. Please use tf.compat.v1.make_template instead.
+
+WARNING:tensorflow:From /home/wd45/fBNN/core/fvi.py:36: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+WARNING:tensorflow:From /home/wd45/fBNN/core/fvi.py:65: to_float (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.cast` instead.
+WARNING:tensorflow:From /home/wd45/fBNN/core/fvi.py:65: Normal.__init__ (from tensorflow.python.ops.distributions.normal) is deprecated and will be removed after 2019-01-01.
+Instructions for updating:
+The TensorFlow Distributions library has moved to TensorFlow Probability (https://github.com/tensorflow/probability). You should update all references to use `tfp.distributions` instead of `tf.distributions`.
+WARNING:tensorflow:From /home/wd45/deng_env/lib/python3.6/site-packages/tensorflow/python/ops/distributions/normal.py:160: Distribution.__init__ (from tensorflow.python.ops.distributions.distribution) is deprecated and will be removed after 2019-01-01.
+Instructions for updating:
+The TensorFlow Distributions library has moved to TensorFlow Probability (https://github.com/tensorflow/probability). You should update all references to use `tfp.distributions` instead of `tf.distributions`.
+WARNING:tensorflow:From /home/wd45/deng_env/lib/python3.6/site-packages/tensorflow/python/ops/math_ops.py:2403: add_dispatch_support.<locals>.wrapper (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+WARNING:tensorflow:From /home/wd45/fBNN/core/grad_estimator/spectral.py:107: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.cast` instead.
+WARNING:tensorflow:From /home/wd45/fBNN/core/fvi.py:135: MultivariateNormalFullCovariance.__init__ (from tensorflow.contrib.distributions.python.ops.mvn_full_covariance) is deprecated and will be removed after 2018-10-01.
+Instructions for updating:
+The TensorFlow Distributions library has moved to TensorFlow Probability (https://github.com/tensorflow/probability). You should update all references to use `tfp.distributions` instead of `tf.contrib.distributions`.
+WARNING:tensorflow:From /home/wd45/deng_env/lib/python3.6/site-packages/tensorflow/contrib/distributions/python/ops/mvn_full_covariance.py:195: MultivariateNormalTriL.__init__ (from tensorflow.contrib.distributions.python.ops.mvn_tril) is deprecated and will be removed after 2018-10-01.
+Instructions for updating:
+The TensorFlow Distributions library has moved to TensorFlow Probability (https://github.com/tensorflow/probability). You should update all references to use `tfp.distributions` instead of `tf.contrib.distributions`.
+WARNING:tensorflow:From /home/wd45/deng_env/lib/python3.6/site-packages/tensorflow/contrib/distributions/python/ops/mvn_tril.py:222: MultivariateNormalLinearOperator.__init__ (from tensorflow.contrib.distributions.python.ops.mvn_linear_operator) is deprecated and will be removed after 2018-10-01.
+Instructions for updating:
+The TensorFlow Distributions library has moved to TensorFlow Probability (https://github.com/tensorflow/probability). You should update all references to use `tfp.distributions` instead of `tf.contrib.distributions`.
+WARNING:tensorflow:From /home/wd45/deng_env/lib/python3.6/site-packages/tensorflow/contrib/distributions/python/ops/mvn_linear_operator.py:201: AffineLinearOperator.__init__ (from tensorflow.contrib.distributions.python.ops.bijectors.affine_linear_operator) is deprecated and will be removed after 2018-10-01.
+Instructions for updating:
+The TensorFlow Distributions library has moved to TensorFlow Probability (https://github.com/tensorflow/probability). You should update all references to use `tfp.distributions` instead of `tf.contrib.distributions`.
+WARNING:tensorflow:From /home/wd45/deng_env/lib/python3.6/site-packages/tensorflow/contrib/distributions/python/ops/bijectors/affine_linear_operator.py:158: _DistributionShape.__init__ (from tensorflow.contrib.distributions.python.ops.shape) is deprecated and will be removed after 2018-10-01.
+Instructions for updating:
+The TensorFlow Distributions library has moved to TensorFlow Probability (https://github.com/tensorflow/probability). You should update all references to use `tfp.distributions` instead of `tf.contrib.distributions`.
+WARNING:tensorflow:From /home/wd45/deng_env/lib/python3.6/site-packages/tensorflow/contrib/distributions/python/ops/mvn_linear_operator.py:205: TransformedDistribution.__init__ (from tensorflow.python.ops.distributions.transformed_distribution) is deprecated and will be removed after 2019-01-01.
+Instructions for updating:
+The TensorFlow Distributions library has moved to TensorFlow Probability (https://github.com/tensorflow/probability). You should update all references to use `tfp.distributions` instead of `tf.distributions`.
+WARNING:tensorflow:From /home/wd45/fBNN/core/fvi.py:136: to_double (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.cast` instead.
+WARNING:tensorflow:From /home/wd45/fBNN/core/fvi.py:93: The name tf.train.AdamOptimizer is deprecated. Please use tf.compat.v1.train.AdamOptimizer instead.
+
+2019-10-24 13:56:24.710525: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+2019-10-24 13:56:24.718422: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2599890000 Hz
+2019-10-24 13:56:24.718530: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x62a40f0 executing computations on platform Host. Devices:
+2019-10-24 13:56:24.718541: I tensorflow/compiler/xla/service/service.cc:175]   StreamExecutor device (0): <undefined>, <undefined>
+WARNING:tensorflow:From exp/toy_sin.py:85: The name tf.train.Saver is deprecated. Please use tf.compat.v1.train.Saver instead.
+
+WARNING:tensorflow:From exp/toy_sin.py:86: The name tf.train.import_meta_graph is deprecated. Please use tf.compat.v1.train.import_meta_graph instead.
+
+WARNING:tensorflow:From /home/wd45/deng_env/lib/python3.6/site-packages/tensorflow/python/training/saver.py:1276: checkpoint_exists (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to check for files with this prefix.
+2019-10-24 13:56:25.935491: W tensorflow/compiler/jit/mark_for_compilation_pass.cc:1412] (One-time warning): Not using XLA:CPU for cluster because envvar TF_XLA_FLAGS=--tf_xla_cpu_global_jit was not set.  If you want XLA:CPU, either set that envvar, or use experimental_jit_scope to enable XLA:CPU.  To confirm that XLA is active, pass --vmodule=xla_compilation_cache=1 (as a proper command-line flag, not via TF_XLA_FLAGS) or set the envvar XLA_FLAGS=--xla_hlo_profile.
+>>> Epoch 10600/50000 | elbo_sur=-13.08047 | logLL=-21.47750 | kl_sur=-167.94070
+>>> Epoch 10700/50000 | elbo_sur=-12.82963 | logLL=-21.46007 | kl_sur=-172.60887
+>>> Epoch 10800/50000 | elbo_sur=-12.88237 | logLL=-21.46168 | kl_sur=-171.58609
+>>> Epoch 10900/50000 | elbo_sur=-13.03349 | logLL=-21.46293 | kl_sur=-168.58868
+>>> Epoch 11000/50000 | elbo_sur=-12.90930 | logLL=-21.46197 | kl_sur=-171.05334
+>>> Epoch 11100/50000 | elbo_sur=-13.02089 | logLL=-21.46455 | kl_sur=-168.87312
+WARNING:tensorflow:From /home/wd45/deng_env/lib/python3.6/site-packages/tensorflow/python/training/saver.py:960: remove_checkpoint (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to delete files with this prefix.
+>>> Epoch 11200/50000 | elbo_sur=-12.95974 | logLL=-21.46735 | kl_sur=-170.15221
+>>> Epoch 11300/50000 | elbo_sur=-12.93192 | logLL=-21.46027 | kl_sur=-170.56702
+>>> Epoch 11400/50000 | elbo_sur=-13.05956 | logLL=-21.46791 | kl_sur=-168.16695
+>>> Epoch 11500/50000 | elbo_sur=-12.83305 | logLL=-21.46110 | kl_sur=-172.56085
+>>> Epoch 11600/50000 | elbo_sur=-12.88203 | logLL=-21.46556 | kl_sur=-171.67070
+>>> Epoch 11700/50000 | elbo_sur=-12.83514 | logLL=-21.46133 | kl_sur=-172.52386
+>>> Epoch 11800/50000 | elbo_sur=-13.00620 | logLL=-21.46658 | kl_sur=-169.20764
+>>> Epoch 11900/50000 | elbo_sur=-13.03714 | logLL=-21.47059 | kl_sur=-168.66910
+>>> Epoch 12000/50000 | elbo_sur=-13.02173 | logLL=-21.47528 | kl_sur=-169.07117
+/home/wd45/deng_env/lib/python3.6/site-packages/matplotlib/cbook/__init__.py:424: MatplotlibDeprecationWarning: 
+Passing one of 'on', 'true', 'off', 'false' as a boolean is deprecated; use an actual boolean (True/False) instead.
+  warn_deprecated("2.2", "Passing one of 'on', 'true', 'off', 'false' as a "
+>>> Epoch 12100/50000 | elbo_sur=-12.93081 | logLL=-21.46280 | kl_sur=-170.63991
+>>> Epoch 12200/50000 | elbo_sur=-12.95205 | logLL=-21.46262 | kl_sur=-170.21147
+>>> Epoch 12300/50000 | elbo_sur=-13.02234 | logLL=-21.46720 | kl_sur=-168.89719
+>>> Epoch 12400/50000 | elbo_sur=-12.88622 | logLL=-21.46486 | kl_sur=-171.57277
+>>> Epoch 12500/50000 | elbo_sur=-12.90535 | logLL=-21.46411 | kl_sur=-171.17519
+>>> Epoch 12600/50000 | elbo_sur=-12.84839 | logLL=-21.46233 | kl_sur=-172.27872
+>>> Epoch 12700/50000 | elbo_sur=-12.88378 | logLL=-21.46135 | kl_sur=-171.55125
+>>> Epoch 12800/50000 | elbo_sur=-12.99766 | logLL=-21.46635 | kl_sur=-169.37393
+>>> Epoch 12900/50000 | elbo_sur=-12.87963 | logLL=-21.46259 | kl_sur=-171.65919
+>>> Epoch 13000/50000 | elbo_sur=-13.06039 | logLL=-21.47195 | kl_sur=-168.23122
+>>> Epoch 13100/50000 | elbo_sur=-12.89141 | logLL=-21.45683 | kl_sur=-171.30853
+>>> Epoch 13200/50000 | elbo_sur=-12.86119 | logLL=-21.46350 | kl_sur=-172.04617
+>>> Epoch 13300/50000 | elbo_sur=-12.93836 | logLL=-21.46672 | kl_sur=-170.56712
+>>> Epoch 13400/50000 | elbo_sur=-12.97040 | logLL=-21.46991 | kl_sur=-169.99017
+>>> Epoch 13500/50000 | elbo_sur=-12.79801 | logLL=-21.45864 | kl_sur=-173.21262
+>>> Epoch 13600/50000 | elbo_sur=-12.93090 | logLL=-21.46208 | kl_sur=-170.62370
+>>> Epoch 13700/50000 | elbo_sur=-12.95701 | logLL=-21.46628 | kl_sur=-170.18549
+>>> Epoch 13800/50000 | elbo_sur=-12.86719 | logLL=-21.45808 | kl_sur=-171.81786
+>>> Epoch 13900/50000 | elbo_sur=-12.97351 | logLL=-21.46693 | kl_sur=-169.86844
+>>> Epoch 14000/50000 | elbo_sur=-12.97032 | logLL=-21.46849 | kl_sur=-169.96339
+>>> Epoch 14100/50000 | elbo_sur=-12.86495 | logLL=-21.46050 | kl_sur=-171.91100
+>>> Epoch 14200/50000 | elbo_sur=-12.85175 | logLL=-21.46435 | kl_sur=-172.25195
+>>> Epoch 14300/50000 | elbo_sur=-12.87099 | logLL=-21.46022 | kl_sur=-171.78464
+>>> Epoch 14400/50000 | elbo_sur=-12.78167 | logLL=-21.45906 | kl_sur=-173.54797
+>>> Epoch 14500/50000 | elbo_sur=-12.85666 | logLL=-21.46367 | kl_sur=-172.14024
+>>> Epoch 14600/50000 | elbo_sur=-12.80405 | logLL=-21.46194 | kl_sur=-173.15776
+>>> Epoch 14700/50000 | elbo_sur=-13.02355 | logLL=-21.46117 | kl_sur=-168.75233
+>>> Epoch 14800/50000 | elbo_sur=-12.87617 | logLL=-21.46037 | kl_sur=-171.68396
+>>> Epoch 14900/50000 | elbo_sur=-12.97348 | logLL=-21.46745 | kl_sur=-169.87943
+>>> Epoch 15000/50000 | elbo_sur=-13.09086 | logLL=-21.46584 | kl_sur=-167.49976
+>>> Epoch 15100/50000 | elbo_sur=-12.84689 | logLL=-21.45464 | kl_sur=-172.15485
+>>> Epoch 15200/50000 | elbo_sur=-12.94057 | logLL=-21.46364 | kl_sur=-170.46146
+>>> Epoch 15300/50000 | elbo_sur=-12.81072 | logLL=-21.46117 | kl_sur=-173.00902
+>>> Epoch 15400/50000 | elbo_sur=-12.92894 | logLL=-21.46370 | kl_sur=-170.69528
+>>> Epoch 15500/50000 | elbo_sur=-12.81974 | logLL=-21.45670 | kl_sur=-172.73914
+>>> Epoch 15600/50000 | elbo_sur=-12.79465 | logLL=-21.45774 | kl_sur=-173.26172
+>>> Epoch 15700/50000 | elbo_sur=-12.88651 | logLL=-21.46226 | kl_sur=-171.51506
+>>> Epoch 15800/50000 | elbo_sur=-12.89868 | logLL=-21.46573 | kl_sur=-171.34116
+>>> Epoch 15900/50000 | elbo_sur=-12.93726 | logLL=-21.46546 | kl_sur=-170.56407
+>>> Epoch 16000/50000 | elbo_sur=-12.87421 | logLL=-21.45969 | kl_sur=-171.70969
+>>> Epoch 16100/50000 | elbo_sur=-13.20309 | logLL=-21.46551 | kl_sur=-165.24828
+>>> Epoch 16200/50000 | elbo_sur=-12.82160 | logLL=-21.46095 | kl_sur=-172.78687
+>>> Epoch 16300/50000 | elbo_sur=-12.86637 | logLL=-21.46075 | kl_sur=-171.88770
+>>> Epoch 16400/50000 | elbo_sur=-12.84369 | logLL=-21.46051 | kl_sur=-172.33641
+>>> Epoch 16500/50000 | elbo_sur=-12.98836 | logLL=-21.46972 | kl_sur=-169.62708
+>>> Epoch 16600/50000 | elbo_sur=-12.94862 | logLL=-21.46600 | kl_sur=-170.34763
+>>> Epoch 16700/50000 | elbo_sur=-12.93766 | logLL=-21.46837 | kl_sur=-170.61417
+>>> Epoch 16800/50000 | elbo_sur=-12.86444 | logLL=-21.46089 | kl_sur=-171.92886
+>>> Epoch 16900/50000 | elbo_sur=-12.89905 | logLL=-21.45966 | kl_sur=-171.21214
+>>> Epoch 17000/50000 | elbo_sur=-12.94097 | logLL=-21.46188 | kl_sur=-170.41806
+>>> Epoch 17100/50000 | elbo_sur=-12.85037 | logLL=-21.45834 | kl_sur=-172.15945
+>>> Epoch 17200/50000 | elbo_sur=-12.90152 | logLL=-21.46520 | kl_sur=-171.27365
+>>> Epoch 17300/50000 | elbo_sur=-12.94843 | logLL=-21.46637 | kl_sur=-170.35872
+>>> Epoch 17400/50000 | elbo_sur=-12.86511 | logLL=-21.46448 | kl_sur=-171.98743
+>>> Epoch 17500/50000 | elbo_sur=-12.93106 | logLL=-21.46325 | kl_sur=-170.64386
+>>> Epoch 17600/50000 | elbo_sur=-12.94168 | logLL=-21.46495 | kl_sur=-170.46547
+>>> Epoch 17700/50000 | elbo_sur=-12.96541 | logLL=-21.46944 | kl_sur=-170.08061
+>>> Epoch 17800/50000 | elbo_sur=-13.00056 | logLL=-21.46900 | kl_sur=-169.36897
+>>> Epoch 17900/50000 | elbo_sur=-13.02431 | logLL=-21.46560 | kl_sur=-168.82576
+>>> Epoch 18000/50000 | elbo_sur=-12.91035 | logLL=-21.46089 | kl_sur=-171.01068
+>>> Epoch 18100/50000 | elbo_sur=-12.92953 | logLL=-21.46105 | kl_sur=-170.63029
+>>> Epoch 18200/50000 | elbo_sur=-12.84957 | logLL=-21.45971 | kl_sur=-172.20271
+>>> Epoch 18300/50000 | elbo_sur=-12.86897 | logLL=-21.46218 | kl_sur=-171.86418
+>>> Epoch 18400/50000 | elbo_sur=-12.85691 | logLL=-21.46051 | kl_sur=-172.07190
+>>> Epoch 18500/50000 | elbo_sur=-13.02774 | logLL=-21.47013 | kl_sur=-168.84787
+>>> Epoch 18600/50000 | elbo_sur=-12.86126 | logLL=-21.46269 | kl_sur=-172.02852
+>>> Epoch 18700/50000 | elbo_sur=-12.93157 | logLL=-21.46309 | kl_sur=-170.63037
+>>> Epoch 18800/50000 | elbo_sur=-12.87229 | logLL=-21.46021 | kl_sur=-171.75841
+>>> Epoch 18900/50000 | elbo_sur=-12.92428 | logLL=-21.46703 | kl_sur=-170.85510
+>>> Epoch 19000/50000 | elbo_sur=-12.86932 | logLL=-21.46366 | kl_sur=-171.88684
+>>> Epoch 19100/50000 | elbo_sur=-12.81504 | logLL=-21.45934 | kl_sur=-172.88591
+>>> Epoch 19200/50000 | elbo_sur=-12.97231 | logLL=-21.46638 | kl_sur=-169.88129
+>>> Epoch 19300/50000 | elbo_sur=-12.98774 | logLL=-21.46837 | kl_sur=-169.61267
+>>> Epoch 19400/50000 | elbo_sur=-12.90043 | logLL=-21.46090 | kl_sur=-171.20935
+>>> Epoch 19500/50000 | elbo_sur=-12.85398 | logLL=-21.46239 | kl_sur=-172.16821
+>>> Epoch 19600/50000 | elbo_sur=-12.96870 | logLL=-21.46630 | kl_sur=-169.95206
+>>> Epoch 19700/50000 | elbo_sur=-12.96032 | logLL=-21.46980 | kl_sur=-170.18959
+>>> Epoch 19800/50000 | elbo_sur=-12.86295 | logLL=-21.46214 | kl_sur=-171.98398
+>>> Epoch 19900/50000 | elbo_sur=-12.82856 | logLL=-21.46484 | kl_sur=-172.72569
+>>> Epoch 20000/50000 | elbo_sur=-12.97668 | logLL=-21.46769 | kl_sur=-169.82019
+>>> Epoch 20100/50000 | elbo_sur=-12.86536 | logLL=-21.46267 | kl_sur=-171.94627
+>>> Epoch 20200/50000 | elbo_sur=-12.81937 | logLL=-21.46048 | kl_sur=-172.82220
+>>> Epoch 20300/50000 | elbo_sur=-12.91454 | logLL=-21.46409 | kl_sur=-170.99110
+slurmstepd: error: *** JOB 54430659 ON compute-e-16-183 CANCELLED AT 2019-10-25T01:56:30 DUE TO TIME LIMIT ***
