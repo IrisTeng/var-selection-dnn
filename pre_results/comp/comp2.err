@@ -1,0 +1,108 @@
+WARNING:tensorflow:From /home/wd45/fBNN/gpflowSlim/misc.py:24: The name tf.GraphKeys is deprecated. Please use tf.compat.v1.GraphKeys instead.
+
+WARNING:tensorflow:From exp/toy_comp.py:60: The name tf.variable_scope is deprecated. Please use tf.compat.v1.variable_scope instead.
+
+WARNING:tensorflow:From /home/wd45/fBNN/gpflowSlim/params.py:143: The name tf.get_variable is deprecated. Please use tf.compat.v1.get_variable instead.
+
+/home/wd45/fBNN/zhusuan/framework/utils.py:116: FutureWarning: The `reuse()` function has been renamed to `reuse_variables()`, `reuse()` will be removed in the coming version (0.4.1)
+  FutureWarning)
+WARNING:tensorflow:From /home/wd45/fBNN/zhusuan/framework/utils.py:106: The name tf.make_template is deprecated. Please use tf.compat.v1.make_template instead.
+
+WARNING:tensorflow:From /home/wd45/fBNN/core/fvi.py:36: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+WARNING:tensorflow:From /home/wd45/fBNN/core/fvi.py:65: to_float (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.cast` instead.
+WARNING:tensorflow:From /home/wd45/fBNN/core/fvi.py:65: Normal.__init__ (from tensorflow.python.ops.distributions.normal) is deprecated and will be removed after 2019-01-01.
+Instructions for updating:
+The TensorFlow Distributions library has moved to TensorFlow Probability (https://github.com/tensorflow/probability). You should update all references to use `tfp.distributions` instead of `tf.distributions`.
+WARNING:tensorflow:From /home/wd45/deng_env/lib/python3.6/site-packages/tensorflow/python/ops/distributions/normal.py:160: Distribution.__init__ (from tensorflow.python.ops.distributions.distribution) is deprecated and will be removed after 2019-01-01.
+Instructions for updating:
+The TensorFlow Distributions library has moved to TensorFlow Probability (https://github.com/tensorflow/probability). You should update all references to use `tfp.distributions` instead of `tf.distributions`.
+WARNING:tensorflow:From /home/wd45/deng_env/lib/python3.6/site-packages/tensorflow/python/ops/math_ops.py:2403: add_dispatch_support.<locals>.wrapper (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+WARNING:tensorflow:From /home/wd45/fBNN/core/grad_estimator/spectral.py:107: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.cast` instead.
+WARNING:tensorflow:From /home/wd45/fBNN/core/fvi.py:135: MultivariateNormalFullCovariance.__init__ (from tensorflow.contrib.distributions.python.ops.mvn_full_covariance) is deprecated and will be removed after 2018-10-01.
+Instructions for updating:
+The TensorFlow Distributions library has moved to TensorFlow Probability (https://github.com/tensorflow/probability). You should update all references to use `tfp.distributions` instead of `tf.contrib.distributions`.
+WARNING:tensorflow:From /home/wd45/deng_env/lib/python3.6/site-packages/tensorflow/contrib/distributions/python/ops/mvn_full_covariance.py:195: MultivariateNormalTriL.__init__ (from tensorflow.contrib.distributions.python.ops.mvn_tril) is deprecated and will be removed after 2018-10-01.
+Instructions for updating:
+The TensorFlow Distributions library has moved to TensorFlow Probability (https://github.com/tensorflow/probability). You should update all references to use `tfp.distributions` instead of `tf.contrib.distributions`.
+WARNING:tensorflow:From /home/wd45/deng_env/lib/python3.6/site-packages/tensorflow/contrib/distributions/python/ops/mvn_tril.py:222: MultivariateNormalLinearOperator.__init__ (from tensorflow.contrib.distributions.python.ops.mvn_linear_operator) is deprecated and will be removed after 2018-10-01.
+Instructions for updating:
+The TensorFlow Distributions library has moved to TensorFlow Probability (https://github.com/tensorflow/probability). You should update all references to use `tfp.distributions` instead of `tf.contrib.distributions`.
+WARNING:tensorflow:From /home/wd45/deng_env/lib/python3.6/site-packages/tensorflow/contrib/distributions/python/ops/mvn_linear_operator.py:201: AffineLinearOperator.__init__ (from tensorflow.contrib.distributions.python.ops.bijectors.affine_linear_operator) is deprecated and will be removed after 2018-10-01.
+Instructions for updating:
+The TensorFlow Distributions library has moved to TensorFlow Probability (https://github.com/tensorflow/probability). You should update all references to use `tfp.distributions` instead of `tf.contrib.distributions`.
+WARNING:tensorflow:From /home/wd45/deng_env/lib/python3.6/site-packages/tensorflow/contrib/distributions/python/ops/bijectors/affine_linear_operator.py:158: _DistributionShape.__init__ (from tensorflow.contrib.distributions.python.ops.shape) is deprecated and will be removed after 2018-10-01.
+Instructions for updating:
+The TensorFlow Distributions library has moved to TensorFlow Probability (https://github.com/tensorflow/probability). You should update all references to use `tfp.distributions` instead of `tf.contrib.distributions`.
+WARNING:tensorflow:From /home/wd45/deng_env/lib/python3.6/site-packages/tensorflow/contrib/distributions/python/ops/mvn_linear_operator.py:205: TransformedDistribution.__init__ (from tensorflow.python.ops.distributions.transformed_distribution) is deprecated and will be removed after 2019-01-01.
+Instructions for updating:
+The TensorFlow Distributions library has moved to TensorFlow Probability (https://github.com/tensorflow/probability). You should update all references to use `tfp.distributions` instead of `tf.distributions`.
+WARNING:tensorflow:From /home/wd45/fBNN/core/fvi.py:136: to_double (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.cast` instead.
+WARNING:tensorflow:From /home/wd45/fBNN/core/fvi.py:93: The name tf.train.AdamOptimizer is deprecated. Please use tf.compat.v1.train.AdamOptimizer instead.
+
+2019-10-24 14:05:37.995115: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+2019-10-24 14:05:38.022838: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2095330000 Hz
+2019-10-24 14:05:38.023166: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x7070100 executing computations on platform Host. Devices:
+2019-10-24 14:05:38.023184: I tensorflow/compiler/xla/service/service.cc:175]   StreamExecutor device (0): <undefined>, <undefined>
+WARNING:tensorflow:From exp/toy_comp.py:85: The name tf.train.Saver is deprecated. Please use tf.compat.v1.train.Saver instead.
+
+WARNING:tensorflow:From exp/toy_comp.py:86: The name tf.train.import_meta_graph is deprecated. Please use tf.compat.v1.train.import_meta_graph instead.
+
+WARNING:tensorflow:From /home/wd45/deng_env/lib/python3.6/site-packages/tensorflow/python/training/saver.py:1276: checkpoint_exists (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to check for files with this prefix.
+2019-10-24 14:05:41.565252: W tensorflow/compiler/jit/mark_for_compilation_pass.cc:1412] (One-time warning): Not using XLA:CPU for cluster because envvar TF_XLA_FLAGS=--tf_xla_cpu_global_jit was not set.  If you want XLA:CPU, either set that envvar, or use experimental_jit_scope to enable XLA:CPU.  To confirm that XLA is active, pass --vmodule=xla_compilation_cache=1 (as a proper command-line flag, not via TF_XLA_FLAGS) or set the envvar XLA_FLAGS=--xla_hlo_profile.
+>>> Epoch  8400/80000 | elbo_sur=-18.16332 | logLL=-16.76082 | kl_sur=28.05013
+>>> Epoch  8500/80000 | elbo_sur=-18.95027 | logLL=-16.78271 | kl_sur=43.35104
+>>> Epoch  8600/80000 | elbo_sur=-18.71046 | logLL=-16.73221 | kl_sur=39.56490
+>>> Epoch  8700/80000 | elbo_sur=-19.42979 | logLL=-16.77985 | kl_sur=52.99887
+>>> Epoch  8800/80000 | elbo_sur=-18.50622 | logLL=-16.77308 | kl_sur=34.66290
+>>> Epoch  8900/80000 | elbo_sur=-19.53423 | logLL=-16.77271 | kl_sur=55.23038
+WARNING:tensorflow:From /home/wd45/deng_env/lib/python3.6/site-packages/tensorflow/python/training/saver.py:960: remove_checkpoint (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to delete files with this prefix.
+>>> Epoch  9000/80000 | elbo_sur=-18.71585 | logLL=-16.77559 | kl_sur=38.80534
+>>> Epoch  9100/80000 | elbo_sur=-18.79197 | logLL=-16.73220 | kl_sur=41.19547
+>>> Epoch  9200/80000 | elbo_sur=-18.66197 | logLL=-16.70993 | kl_sur=39.04076
+>>> Epoch  9300/80000 | elbo_sur=-19.05772 | logLL=-16.68944 | kl_sur=47.36567
+>>> Epoch  9400/80000 | elbo_sur=-18.30484 | logLL=-16.73705 | kl_sur=31.35579
+>>> Epoch  9500/80000 | elbo_sur=-18.12877 | logLL=-16.74829 | kl_sur=27.60944
+>>> Epoch  9600/80000 | elbo_sur=-18.87134 | logLL=-16.71712 | kl_sur=43.08446
+>>> Epoch  9700/80000 | elbo_sur=-19.25897 | logLL=-16.68242 | kl_sur=51.53102
+>>> Epoch  9800/80000 | elbo_sur=-18.52870 | logLL=-16.71266 | kl_sur=36.32081
+>>> Epoch  9900/80000 | elbo_sur=-19.11215 | logLL=-16.70572 | kl_sur=48.12872
+>>> Epoch 10000/80000 | elbo_sur=-18.64745 | logLL=-16.75127 | kl_sur=37.92356
+/home/wd45/deng_env/lib/python3.6/site-packages/matplotlib/cbook/__init__.py:424: MatplotlibDeprecationWarning: 
+Passing one of 'on', 'true', 'off', 'false' as a boolean is deprecated; use an actual boolean (True/False) instead.
+  warn_deprecated("2.2", "Passing one of 'on', 'true', 'off', 'false' as a "
+>>> Epoch 10100/80000 | elbo_sur=-18.67042 | logLL=-16.66791 | kl_sur=40.05013
+>>> Epoch 10200/80000 | elbo_sur=-18.56354 | logLL=-16.65502 | kl_sur=38.17042
+>>> Epoch 10300/80000 | elbo_sur=-18.67625 | logLL=-16.67598 | kl_sur=40.00553
+>>> Epoch 10400/80000 | elbo_sur=-18.23928 | logLL=-16.62663 | kl_sur=32.25287
+>>> Epoch 10500/80000 | elbo_sur=-18.96024 | logLL=-16.64016 | kl_sur=46.40171
+>>> Epoch 10600/80000 | elbo_sur=-18.57457 | logLL=-16.64011 | kl_sur=38.68921
+>>> Epoch 10700/80000 | elbo_sur=-19.26183 | logLL=-16.62123 | kl_sur=52.81184
+>>> Epoch 10800/80000 | elbo_sur=-18.79133 | logLL=-16.58186 | kl_sur=44.18958
+>>> Epoch 10900/80000 | elbo_sur=-18.90867 | logLL=-16.53314 | kl_sur=47.51060
+>>> Epoch 11000/80000 | elbo_sur=-17.69517 | logLL=-16.37329 | kl_sur=26.43753
+>>> Epoch 11100/80000 | elbo_sur=-18.63637 | logLL=-16.38890 | kl_sur=44.94921
+>>> Epoch 11200/80000 | elbo_sur=-19.53773 | logLL=-16.41018 | kl_sur=62.55103
+>>> Epoch 11300/80000 | elbo_sur=-17.96612 | logLL=-16.36896 | kl_sur=31.94315
+>>> Epoch 11400/80000 | elbo_sur=-18.58212 | logLL=-16.29212 | kl_sur=45.80007
+>>> Epoch 11500/80000 | elbo_sur=-17.84463 | logLL=-16.38821 | kl_sur=29.12850
+>>> Epoch 11600/80000 | elbo_sur=-18.30402 | logLL=-16.31280 | kl_sur=39.82436
+>>> Epoch 11700/80000 | elbo_sur=-18.17433 | logLL=-16.53221 | kl_sur=32.84245
+>>> Epoch 11800/80000 | elbo_sur=-19.08418 | logLL=-16.29520 | kl_sur=55.77959
+>>> Epoch 11900/80000 | elbo_sur=-17.85128 | logLL=-16.42068 | kl_sur=28.61196
+>>> Epoch 12000/80000 | elbo_sur=-18.20489 | logLL=-16.15064 | kl_sur=41.08501
+>>> Epoch 12100/80000 | elbo_sur=-17.39316 | logLL=-16.39527 | kl_sur=19.95780
+>>> Epoch 12200/80000 | elbo_sur=-17.84837 | logLL=-16.35863 | kl_sur=29.79467
+slurmstepd: error: *** JOB 54431042 ON compute-a-16-164 CANCELLED AT 2019-10-25T02:05:25 DUE TO TIME LIMIT ***
