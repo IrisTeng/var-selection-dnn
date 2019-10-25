@@ -1,0 +1,263 @@
+WARNING:tensorflow:From /home/wd45/fBNN/gpflowSlim/misc.py:24: The name tf.GraphKeys is deprecated. Please use tf.compat.v1.GraphKeys instead.
+
+WARNING:tensorflow:From exp/toy_rbf.py:60: The name tf.variable_scope is deprecated. Please use tf.compat.v1.variable_scope instead.
+
+WARNING:tensorflow:From /home/wd45/fBNN/gpflowSlim/params.py:143: The name tf.get_variable is deprecated. Please use tf.compat.v1.get_variable instead.
+
+/home/wd45/fBNN/zhusuan/framework/utils.py:116: FutureWarning: The `reuse()` function has been renamed to `reuse_variables()`, `reuse()` will be removed in the coming version (0.4.1)
+  FutureWarning)
+WARNING:tensorflow:From /home/wd45/fBNN/zhusuan/framework/utils.py:106: The name tf.make_template is deprecated. Please use tf.compat.v1.make_template instead.
+
+WARNING:tensorflow:From /home/wd45/fBNN/core/fvi.py:36: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+WARNING:tensorflow:From /home/wd45/fBNN/core/fvi.py:65: to_float (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.cast` instead.
+WARNING:tensorflow:From /home/wd45/fBNN/core/fvi.py:65: Normal.__init__ (from tensorflow.python.ops.distributions.normal) is deprecated and will be removed after 2019-01-01.
+Instructions for updating:
+The TensorFlow Distributions library has moved to TensorFlow Probability (https://github.com/tensorflow/probability). You should update all references to use `tfp.distributions` instead of `tf.distributions`.
+WARNING:tensorflow:From /home/wd45/deng_env/lib/python3.6/site-packages/tensorflow/python/ops/distributions/normal.py:160: Distribution.__init__ (from tensorflow.python.ops.distributions.distribution) is deprecated and will be removed after 2019-01-01.
+Instructions for updating:
+The TensorFlow Distributions library has moved to TensorFlow Probability (https://github.com/tensorflow/probability). You should update all references to use `tfp.distributions` instead of `tf.distributions`.
+WARNING:tensorflow:From /home/wd45/deng_env/lib/python3.6/site-packages/tensorflow/python/ops/math_ops.py:2403: add_dispatch_support.<locals>.wrapper (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+WARNING:tensorflow:From /home/wd45/fBNN/core/grad_estimator/spectral.py:107: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.cast` instead.
+WARNING:tensorflow:From /home/wd45/fBNN/core/fvi.py:135: MultivariateNormalFullCovariance.__init__ (from tensorflow.contrib.distributions.python.ops.mvn_full_covariance) is deprecated and will be removed after 2018-10-01.
+Instructions for updating:
+The TensorFlow Distributions library has moved to TensorFlow Probability (https://github.com/tensorflow/probability). You should update all references to use `tfp.distributions` instead of `tf.contrib.distributions`.
+WARNING:tensorflow:From /home/wd45/deng_env/lib/python3.6/site-packages/tensorflow/contrib/distributions/python/ops/mvn_full_covariance.py:195: MultivariateNormalTriL.__init__ (from tensorflow.contrib.distributions.python.ops.mvn_tril) is deprecated and will be removed after 2018-10-01.
+Instructions for updating:
+The TensorFlow Distributions library has moved to TensorFlow Probability (https://github.com/tensorflow/probability). You should update all references to use `tfp.distributions` instead of `tf.contrib.distributions`.
+WARNING:tensorflow:From /home/wd45/deng_env/lib/python3.6/site-packages/tensorflow/contrib/distributions/python/ops/mvn_tril.py:222: MultivariateNormalLinearOperator.__init__ (from tensorflow.contrib.distributions.python.ops.mvn_linear_operator) is deprecated and will be removed after 2018-10-01.
+Instructions for updating:
+The TensorFlow Distributions library has moved to TensorFlow Probability (https://github.com/tensorflow/probability). You should update all references to use `tfp.distributions` instead of `tf.contrib.distributions`.
+WARNING:tensorflow:From /home/wd45/deng_env/lib/python3.6/site-packages/tensorflow/contrib/distributions/python/ops/mvn_linear_operator.py:201: AffineLinearOperator.__init__ (from tensorflow.contrib.distributions.python.ops.bijectors.affine_linear_operator) is deprecated and will be removed after 2018-10-01.
+Instructions for updating:
+The TensorFlow Distributions library has moved to TensorFlow Probability (https://github.com/tensorflow/probability). You should update all references to use `tfp.distributions` instead of `tf.contrib.distributions`.
+WARNING:tensorflow:From /home/wd45/deng_env/lib/python3.6/site-packages/tensorflow/contrib/distributions/python/ops/bijectors/affine_linear_operator.py:158: _DistributionShape.__init__ (from tensorflow.contrib.distributions.python.ops.shape) is deprecated and will be removed after 2018-10-01.
+Instructions for updating:
+The TensorFlow Distributions library has moved to TensorFlow Probability (https://github.com/tensorflow/probability). You should update all references to use `tfp.distributions` instead of `tf.contrib.distributions`.
+WARNING:tensorflow:From /home/wd45/deng_env/lib/python3.6/site-packages/tensorflow/contrib/distributions/python/ops/mvn_linear_operator.py:205: TransformedDistribution.__init__ (from tensorflow.python.ops.distributions.transformed_distribution) is deprecated and will be removed after 2019-01-01.
+Instructions for updating:
+The TensorFlow Distributions library has moved to TensorFlow Probability (https://github.com/tensorflow/probability). You should update all references to use `tfp.distributions` instead of `tf.distributions`.
+WARNING:tensorflow:From /home/wd45/fBNN/core/fvi.py:136: to_double (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.cast` instead.
+WARNING:tensorflow:From /home/wd45/fBNN/core/fvi.py:93: The name tf.train.AdamOptimizer is deprecated. Please use tf.compat.v1.train.AdamOptimizer instead.
+
+2019-10-24 14:03:28.138986: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2799875000 Hz
+2019-10-24 14:03:28.139114: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x51bf090 executing computations on platform Host. Devices:
+2019-10-24 14:03:28.139126: I tensorflow/compiler/xla/service/service.cc:175]   StreamExecutor device (0): <undefined>, <undefined>
+2019-10-24 14:03:28.262308: W tensorflow/compiler/jit/mark_for_compilation_pass.cc:1412] (One-time warning): Not using XLA:CPU for cluster because envvar TF_XLA_FLAGS=--tf_xla_cpu_global_jit was not set.  If you want XLA:CPU, either set that envvar, or use experimental_jit_scope to enable XLA:CPU.  To confirm that XLA is active, pass --vmodule=xla_compilation_cache=1 (as a proper command-line flag, not via TF_XLA_FLAGS) or set the envvar XLA_FLAGS=--xla_hlo_profile.
+WARNING:tensorflow:From exp/toy_rbf.py:85: The name tf.train.Saver is deprecated. Please use tf.compat.v1.train.Saver instead.
+
+>>> Epoch     0/20000 | elbo_sur=-261.73764 | logLL=-264.08337 | kl_sur=-46.91458
+/home/wd45/deng_env/lib/python3.6/site-packages/matplotlib/cbook/__init__.py:424: MatplotlibDeprecationWarning: 
+Passing one of 'on', 'true', 'off', 'false' as a boolean is deprecated; use an actual boolean (True/False) instead.
+  warn_deprecated("2.2", "Passing one of 'on', 'true', 'off', 'false' as a "
+>>> Epoch   100/20000 | elbo_sur=-32.54557 | logLL=-34.69347 | kl_sur=-42.95801
+>>> Epoch   200/20000 | elbo_sur=2.42725 | logLL=0.84273 | kl_sur=-31.69029
+>>> Epoch   300/20000 | elbo_sur=2.74717 | logLL=1.26743 | kl_sur=-29.59496
+>>> Epoch   400/20000 | elbo_sur=3.24874 | logLL=1.46617 | kl_sur=-35.65132
+>>> Epoch   500/20000 | elbo_sur=3.35461 | logLL=1.59564 | kl_sur=-35.17937
+WARNING:tensorflow:From /home/wd45/deng_env/lib/python3.6/site-packages/tensorflow/python/training/saver.py:960: remove_checkpoint (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to delete files with this prefix.
+>>> Epoch   600/20000 | elbo_sur=3.51522 | logLL=1.58380 | kl_sur=-38.62849
+>>> Epoch   700/20000 | elbo_sur=3.16721 | logLL=1.58972 | kl_sur=-31.54967
+>>> Epoch   800/20000 | elbo_sur=3.34798 | logLL=1.61893 | kl_sur=-34.58113
+>>> Epoch   900/20000 | elbo_sur=3.45095 | logLL=1.59592 | kl_sur=-37.10049
+>>> Epoch  1000/20000 | elbo_sur=3.27328 | logLL=1.62048 | kl_sur=-33.05590
+>>> Epoch  1100/20000 | elbo_sur=3.71430 | logLL=1.61145 | kl_sur=-42.05706
+>>> Epoch  1200/20000 | elbo_sur=3.28858 | logLL=1.61585 | kl_sur=-33.45466
+>>> Epoch  1300/20000 | elbo_sur=3.69179 | logLL=1.64609 | kl_sur=-40.91405
+>>> Epoch  1400/20000 | elbo_sur=3.26392 | logLL=1.61736 | kl_sur=-32.93105
+>>> Epoch  1500/20000 | elbo_sur=3.31893 | logLL=1.61459 | kl_sur=-34.08664
+>>> Epoch  1600/20000 | elbo_sur=3.57338 | logLL=1.60054 | kl_sur=-39.45692
+>>> Epoch  1700/20000 | elbo_sur=3.61575 | logLL=1.60543 | kl_sur=-40.20638
+>>> Epoch  1800/20000 | elbo_sur=3.56532 | logLL=1.59943 | kl_sur=-39.31778
+>>> Epoch  1900/20000 | elbo_sur=3.46925 | logLL=1.62919 | kl_sur=-36.80126
+>>> Epoch  2000/20000 | elbo_sur=3.42140 | logLL=1.61799 | kl_sur=-36.06813
+>>> Epoch  2100/20000 | elbo_sur=3.51782 | logLL=1.59150 | kl_sur=-38.52634
+>>> Epoch  2200/20000 | elbo_sur=3.19051 | logLL=1.57754 | kl_sur=-32.25951
+>>> Epoch  2300/20000 | elbo_sur=3.39466 | logLL=1.59739 | kl_sur=-35.94552
+>>> Epoch  2400/20000 | elbo_sur=3.54903 | logLL=1.60504 | kl_sur=-38.87980
+>>> Epoch  2500/20000 | elbo_sur=3.33835 | logLL=1.59391 | kl_sur=-34.88871
+>>> Epoch  2600/20000 | elbo_sur=3.76369 | logLL=1.58660 | kl_sur=-43.54191
+>>> Epoch  2700/20000 | elbo_sur=3.34365 | logLL=1.63039 | kl_sur=-34.26534
+>>> Epoch  2800/20000 | elbo_sur=3.19443 | logLL=1.62549 | kl_sur=-31.37875
+>>> Epoch  2900/20000 | elbo_sur=3.47756 | logLL=1.65586 | kl_sur=-36.43417
+>>> Epoch  3000/20000 | elbo_sur=3.26621 | logLL=1.63072 | kl_sur=-32.70980
+>>> Epoch  3100/20000 | elbo_sur=3.53551 | logLL=1.60382 | kl_sur=-38.63364
+>>> Epoch  3200/20000 | elbo_sur=3.37484 | logLL=1.65591 | kl_sur=-34.37862
+>>> Epoch  3300/20000 | elbo_sur=3.59393 | logLL=1.65296 | kl_sur=-38.81930
+>>> Epoch  3400/20000 | elbo_sur=3.47314 | logLL=1.61250 | kl_sur=-37.21290
+>>> Epoch  3500/20000 | elbo_sur=3.21700 | logLL=1.63476 | kl_sur=-31.64481
+>>> Epoch  3600/20000 | elbo_sur=3.47236 | logLL=1.65381 | kl_sur=-36.37086
+>>> Epoch  3700/20000 | elbo_sur=2.92549 | logLL=1.57487 | kl_sur=-27.01239
+>>> Epoch  3800/20000 | elbo_sur=2.86342 | logLL=1.60061 | kl_sur=-25.25618
+>>> Epoch  3900/20000 | elbo_sur=3.79538 | logLL=1.62701 | kl_sur=-43.36733
+>>> Epoch  4000/20000 | elbo_sur=3.46212 | logLL=1.64796 | kl_sur=-36.28329
+>>> Epoch  4100/20000 | elbo_sur=3.34570 | logLL=1.62401 | kl_sur=-34.43384
+>>> Epoch  4200/20000 | elbo_sur=3.11239 | logLL=1.62503 | kl_sur=-29.74734
+>>> Epoch  4300/20000 | elbo_sur=3.32185 | logLL=1.63065 | kl_sur=-33.82401
+>>> Epoch  4400/20000 | elbo_sur=3.10832 | logLL=1.63089 | kl_sur=-29.54872
+>>> Epoch  4500/20000 | elbo_sur=3.22827 | logLL=1.62860 | kl_sur=-31.99347
+>>> Epoch  4600/20000 | elbo_sur=2.88813 | logLL=1.62347 | kl_sur=-25.29335
+>>> Epoch  4700/20000 | elbo_sur=3.28037 | logLL=1.60338 | kl_sur=-33.53976
+>>> Epoch  4800/20000 | elbo_sur=3.60179 | logLL=1.61172 | kl_sur=-39.80140
+>>> Epoch  4900/20000 | elbo_sur=3.16885 | logLL=1.61906 | kl_sur=-30.99595
+>>> Epoch  5000/20000 | elbo_sur=3.04443 | logLL=1.54262 | kl_sur=-30.03606
+>>> Epoch  5100/20000 | elbo_sur=3.13450 | logLL=1.57119 | kl_sur=-31.26620
+>>> Epoch  5200/20000 | elbo_sur=3.37704 | logLL=1.63182 | kl_sur=-34.90433
+>>> Epoch  5300/20000 | elbo_sur=3.40103 | logLL=1.61709 | kl_sur=-35.67887
+>>> Epoch  5400/20000 | elbo_sur=3.70735 | logLL=1.58376 | kl_sur=-42.47188
+>>> Epoch  5500/20000 | elbo_sur=3.12719 | logLL=1.64329 | kl_sur=-29.67791
+>>> Epoch  5600/20000 | elbo_sur=3.18224 | logLL=1.58922 | kl_sur=-31.86033
+>>> Epoch  5700/20000 | elbo_sur=3.22187 | logLL=1.60494 | kl_sur=-32.33860
+>>> Epoch  5800/20000 | elbo_sur=2.90467 | logLL=1.63276 | kl_sur=-25.43803
+>>> Epoch  5900/20000 | elbo_sur=3.30145 | logLL=1.60742 | kl_sur=-33.88061
+>>> Epoch  6000/20000 | elbo_sur=3.16603 | logLL=1.56773 | kl_sur=-31.96581
+>>> Epoch  6100/20000 | elbo_sur=3.35710 | logLL=1.60762 | kl_sur=-34.98970
+>>> Epoch  6200/20000 | elbo_sur=3.52917 | logLL=1.62536 | kl_sur=-38.07626
+>>> Epoch  6300/20000 | elbo_sur=3.45650 | logLL=1.55126 | kl_sur=-38.10475
+>>> Epoch  6400/20000 | elbo_sur=3.56588 | logLL=1.62040 | kl_sur=-38.90948
+>>> Epoch  6500/20000 | elbo_sur=3.40259 | logLL=1.57643 | kl_sur=-36.52315
+>>> Epoch  6600/20000 | elbo_sur=3.10177 | logLL=1.61544 | kl_sur=-29.72667
+>>> Epoch  6700/20000 | elbo_sur=3.20676 | logLL=1.57770 | kl_sur=-32.58123
+>>> Epoch  6800/20000 | elbo_sur=3.25276 | logLL=1.55862 | kl_sur=-33.88283
+>>> Epoch  6900/20000 | elbo_sur=3.46422 | logLL=1.56912 | kl_sur=-37.90211
+>>> Epoch  7000/20000 | elbo_sur=3.31045 | logLL=1.60736 | kl_sur=-34.06176
+>>> Epoch  7100/20000 | elbo_sur=3.38931 | logLL=1.60583 | kl_sur=-35.66972
+>>> Epoch  7200/20000 | elbo_sur=3.76320 | logLL=1.62220 | kl_sur=-42.82017
+>>> Epoch  7300/20000 | elbo_sur=3.16721 | logLL=1.57990 | kl_sur=-31.74612
+>>> Epoch  7400/20000 | elbo_sur=3.21591 | logLL=1.58104 | kl_sur=-32.69725
+>>> Epoch  7500/20000 | elbo_sur=3.54108 | logLL=1.61725 | kl_sur=-38.47650
+>>> Epoch  7600/20000 | elbo_sur=3.56600 | logLL=1.58872 | kl_sur=-39.54575
+>>> Epoch  7700/20000 | elbo_sur=2.68739 | logLL=1.52808 | kl_sur=-23.18620
+>>> Epoch  7800/20000 | elbo_sur=3.43759 | logLL=1.62584 | kl_sur=-36.23506
+>>> Epoch  7900/20000 | elbo_sur=3.44625 | logLL=1.58635 | kl_sur=-37.19785
+>>> Epoch  8000/20000 | elbo_sur=3.08694 | logLL=1.57046 | kl_sur=-30.32967
+>>> Epoch  8100/20000 | elbo_sur=3.93895 | logLL=1.61514 | kl_sur=-46.47621
+>>> Epoch  8200/20000 | elbo_sur=3.35874 | logLL=1.60960 | kl_sur=-34.98279
+>>> Epoch  8300/20000 | elbo_sur=3.11004 | logLL=1.60075 | kl_sur=-30.18593
+>>> Epoch  8400/20000 | elbo_sur=3.67568 | logLL=1.61191 | kl_sur=-41.27545
+>>> Epoch  8500/20000 | elbo_sur=3.21758 | logLL=1.61000 | kl_sur=-32.15160
+>>> Epoch  8600/20000 | elbo_sur=2.99347 | logLL=1.57493 | kl_sur=-28.37086
+>>> Epoch  8700/20000 | elbo_sur=3.05610 | logLL=1.59626 | kl_sur=-29.19676
+>>> Epoch  8800/20000 | elbo_sur=3.41911 | logLL=1.59308 | kl_sur=-36.52061
+>>> Epoch  8900/20000 | elbo_sur=3.34365 | logLL=1.61444 | kl_sur=-34.58425
+>>> Epoch  9000/20000 | elbo_sur=2.93501 | logLL=1.60699 | kl_sur=-26.56031
+>>> Epoch  9100/20000 | elbo_sur=3.07208 | logLL=1.58707 | kl_sur=-29.70010
+>>> Epoch  9200/20000 | elbo_sur=3.63200 | logLL=1.58043 | kl_sur=-41.03132
+>>> Epoch  9300/20000 | elbo_sur=3.08376 | logLL=1.59166 | kl_sur=-29.84208
+>>> Epoch  9400/20000 | elbo_sur=3.88985 | logLL=1.57635 | kl_sur=-46.27002
+>>> Epoch  9500/20000 | elbo_sur=3.24000 | logLL=1.57574 | kl_sur=-33.28532
+>>> Epoch  9600/20000 | elbo_sur=3.38863 | logLL=1.60479 | kl_sur=-35.67698
+>>> Epoch  9700/20000 | elbo_sur=3.35988 | logLL=1.62329 | kl_sur=-34.73169
+>>> Epoch  9800/20000 | elbo_sur=3.19124 | logLL=1.62148 | kl_sur=-31.39532
+>>> Epoch  9900/20000 | elbo_sur=3.33828 | logLL=1.61369 | kl_sur=-34.49187
+>>> Epoch 10000/20000 | elbo_sur=3.28078 | logLL=1.60414 | kl_sur=-33.53284
+>>> Epoch 10100/20000 | elbo_sur=3.23971 | logLL=1.62011 | kl_sur=-32.39191
+>>> Epoch 10200/20000 | elbo_sur=3.42580 | logLL=1.59762 | kl_sur=-36.56374
+>>> Epoch 10300/20000 | elbo_sur=3.35951 | logLL=1.61226 | kl_sur=-34.94505
+>>> Epoch 10400/20000 | elbo_sur=3.75244 | logLL=1.55631 | kl_sur=-43.92259
+>>> Epoch 10500/20000 | elbo_sur=3.43098 | logLL=1.61256 | kl_sur=-36.36845
+>>> Epoch 10600/20000 | elbo_sur=3.09426 | logLL=1.61162 | kl_sur=-29.65271
+>>> Epoch 10700/20000 | elbo_sur=3.56827 | logLL=1.56855 | kl_sur=-39.99441
+>>> Epoch 10800/20000 | elbo_sur=3.16889 | logLL=1.62462 | kl_sur=-30.88541
+>>> Epoch 10900/20000 | elbo_sur=3.31001 | logLL=1.59266 | kl_sur=-34.34689
+>>> Epoch 11000/20000 | elbo_sur=3.47028 | logLL=1.60106 | kl_sur=-37.38430
+>>> Epoch 11100/20000 | elbo_sur=3.08527 | logLL=1.59577 | kl_sur=-29.78999
+>>> Epoch 11200/20000 | elbo_sur=3.64464 | logLL=1.60300 | kl_sur=-40.83274
+>>> Epoch 11300/20000 | elbo_sur=3.48373 | logLL=1.61909 | kl_sur=-37.29282
+>>> Epoch 11400/20000 | elbo_sur=3.52922 | logLL=1.61188 | kl_sur=-38.34686
+>>> Epoch 11500/20000 | elbo_sur=3.12980 | logLL=1.59310 | kl_sur=-30.73390
+>>> Epoch 11600/20000 | elbo_sur=3.36199 | logLL=1.53446 | kl_sur=-36.55054
+>>> Epoch 11700/20000 | elbo_sur=3.31816 | logLL=1.60030 | kl_sur=-34.35709
+>>> Epoch 11800/20000 | elbo_sur=3.34948 | logLL=1.55852 | kl_sur=-35.81930
+>>> Epoch 11900/20000 | elbo_sur=3.36299 | logLL=1.58758 | kl_sur=-35.50832
+>>> Epoch 12000/20000 | elbo_sur=3.60823 | logLL=1.61279 | kl_sur=-39.90884
+>>> Epoch 12100/20000 | elbo_sur=2.89455 | logLL=1.54782 | kl_sur=-26.93467
+>>> Epoch 12200/20000 | elbo_sur=3.18527 | logLL=1.58495 | kl_sur=-32.00639
+>>> Epoch 12300/20000 | elbo_sur=3.43514 | logLL=1.64992 | kl_sur=-35.70451
+>>> Epoch 12400/20000 | elbo_sur=3.47099 | logLL=1.59442 | kl_sur=-37.53132
+>>> Epoch 12500/20000 | elbo_sur=3.48253 | logLL=1.61132 | kl_sur=-37.42430
+>>> Epoch 12600/20000 | elbo_sur=3.13709 | logLL=1.54374 | kl_sur=-31.86699
+>>> Epoch 12700/20000 | elbo_sur=3.39583 | logLL=1.62776 | kl_sur=-35.36142
+>>> Epoch 12800/20000 | elbo_sur=3.34263 | logLL=1.57197 | kl_sur=-35.41326
+>>> Epoch 12900/20000 | elbo_sur=3.22416 | logLL=1.59027 | kl_sur=-32.67780
+>>> Epoch 13000/20000 | elbo_sur=3.17091 | logLL=1.62666 | kl_sur=-30.88493
+>>> Epoch 13100/20000 | elbo_sur=3.06617 | logLL=1.58607 | kl_sur=-29.60196
+>>> Epoch 13200/20000 | elbo_sur=3.02229 | logLL=1.57433 | kl_sur=-28.95926
+>>> Epoch 13300/20000 | elbo_sur=3.28982 | logLL=1.58298 | kl_sur=-34.13681
+>>> Epoch 13400/20000 | elbo_sur=3.38210 | logLL=1.59918 | kl_sur=-35.65842
+>>> Epoch 13500/20000 | elbo_sur=3.50313 | logLL=1.60489 | kl_sur=-37.96474
+>>> Epoch 13600/20000 | elbo_sur=3.61127 | logLL=1.57556 | kl_sur=-40.71425
+>>> Epoch 13700/20000 | elbo_sur=3.48374 | logLL=1.60175 | kl_sur=-37.63972
+>>> Epoch 13800/20000 | elbo_sur=3.32292 | logLL=1.60329 | kl_sur=-34.39255
+>>> Epoch 13900/20000 | elbo_sur=3.05013 | logLL=1.62777 | kl_sur=-28.44721
+>>> Epoch 14000/20000 | elbo_sur=3.32374 | logLL=1.58997 | kl_sur=-34.67550
+>>> Epoch 14100/20000 | elbo_sur=3.31057 | logLL=1.62244 | kl_sur=-33.76250
+>>> Epoch 14200/20000 | elbo_sur=3.52534 | logLL=1.62914 | kl_sur=-37.92396
+>>> Epoch 14300/20000 | elbo_sur=3.49947 | logLL=1.58926 | kl_sur=-38.20411
+>>> Epoch 14400/20000 | elbo_sur=3.56046 | logLL=1.61113 | kl_sur=-38.98656
+>>> Epoch 14500/20000 | elbo_sur=3.07060 | logLL=1.63489 | kl_sur=-28.71423
+>>> Epoch 14600/20000 | elbo_sur=3.25909 | logLL=1.59461 | kl_sur=-33.28959
+>>> Epoch 14700/20000 | elbo_sur=3.15974 | logLL=1.61428 | kl_sur=-30.90923
+>>> Epoch 14800/20000 | elbo_sur=3.39516 | logLL=1.58658 | kl_sur=-36.17171
+>>> Epoch 14900/20000 | elbo_sur=3.50084 | logLL=1.59403 | kl_sur=-38.13615
+>>> Epoch 15000/20000 | elbo_sur=3.56195 | logLL=1.61110 | kl_sur=-39.01706
+>>> Epoch 15100/20000 | elbo_sur=3.51073 | logLL=1.61190 | kl_sur=-37.97664
+>>> Epoch 15200/20000 | elbo_sur=3.03458 | logLL=1.62438 | kl_sur=-28.20393
+>>> Epoch 15300/20000 | elbo_sur=3.34240 | logLL=1.56742 | kl_sur=-35.49968
+>>> Epoch 15400/20000 | elbo_sur=3.38224 | logLL=1.59048 | kl_sur=-35.83534
+>>> Epoch 15500/20000 | elbo_sur=3.13335 | logLL=1.58562 | kl_sur=-30.95447
+>>> Epoch 15600/20000 | elbo_sur=3.37448 | logLL=1.60066 | kl_sur=-35.47647
+>>> Epoch 15700/20000 | elbo_sur=3.62623 | logLL=1.62373 | kl_sur=-40.04995
+>>> Epoch 15800/20000 | elbo_sur=3.56528 | logLL=1.60612 | kl_sur=-39.18303
+>>> Epoch 15900/20000 | elbo_sur=3.30843 | logLL=1.60950 | kl_sur=-33.97868
+>>> Epoch 16000/20000 | elbo_sur=3.60211 | logLL=1.61441 | kl_sur=-39.75402
+>>> Epoch 16100/20000 | elbo_sur=3.22308 | logLL=1.58335 | kl_sur=-32.79467
+>>> Epoch 16200/20000 | elbo_sur=3.49325 | logLL=1.63111 | kl_sur=-37.24282
+>>> Epoch 16300/20000 | elbo_sur=3.19664 | logLL=1.54433 | kl_sur=-33.04612
+>>> Epoch 16400/20000 | elbo_sur=3.36134 | logLL=1.59244 | kl_sur=-35.37784
+>>> Epoch 16500/20000 | elbo_sur=3.49860 | logLL=1.60303 | kl_sur=-37.91136
+>>> Epoch 16600/20000 | elbo_sur=3.69616 | logLL=1.61458 | kl_sur=-41.63169
+>>> Epoch 16700/20000 | elbo_sur=3.51831 | logLL=1.60619 | kl_sur=-38.24238
+>>> Epoch 16800/20000 | elbo_sur=3.23540 | logLL=1.62471 | kl_sur=-32.21397
+>>> Epoch 16900/20000 | elbo_sur=3.72911 | logLL=1.61930 | kl_sur=-42.19610
+>>> Epoch 17000/20000 | elbo_sur=3.82273 | logLL=1.55913 | kl_sur=-45.27215
+>>> Epoch 17100/20000 | elbo_sur=3.69537 | logLL=1.60180 | kl_sur=-41.87136
+>>> Epoch 17200/20000 | elbo_sur=3.05179 | logLL=1.61774 | kl_sur=-28.68101
+>>> Epoch 17300/20000 | elbo_sur=3.35177 | logLL=1.53912 | kl_sur=-36.25284
+>>> Epoch 17400/20000 | elbo_sur=3.34506 | logLL=1.63330 | kl_sur=-34.23523
+>>> Epoch 17500/20000 | elbo_sur=3.33343 | logLL=1.61388 | kl_sur=-34.39108
+>>> Epoch 17600/20000 | elbo_sur=3.21362 | logLL=1.61700 | kl_sur=-31.93237
+>>> Epoch 17700/20000 | elbo_sur=3.63974 | logLL=1.65944 | kl_sur=-39.60596
+>>> Epoch 17800/20000 | elbo_sur=3.28240 | logLL=1.62213 | kl_sur=-33.20551
+>>> Epoch 17900/20000 | elbo_sur=3.61575 | logLL=1.58878 | kl_sur=-40.53938
+>>> Epoch 18000/20000 | elbo_sur=3.88970 | logLL=1.64020 | kl_sur=-44.99000
+>>> Epoch 18100/20000 | elbo_sur=3.49149 | logLL=1.61579 | kl_sur=-37.51394
+>>> Epoch 18200/20000 | elbo_sur=3.37488 | logLL=1.61628 | kl_sur=-35.17184
+>>> Epoch 18300/20000 | elbo_sur=3.58682 | logLL=1.58873 | kl_sur=-39.96179
+>>> Epoch 18400/20000 | elbo_sur=4.09204 | logLL=1.61323 | kl_sur=-49.57623
+>>> Epoch 18500/20000 | elbo_sur=3.37669 | logLL=1.62855 | kl_sur=-34.96288
+>>> Epoch 18600/20000 | elbo_sur=3.36856 | logLL=1.63304 | kl_sur=-34.71042
+>>> Epoch 18700/20000 | elbo_sur=3.19194 | logLL=1.59880 | kl_sur=-31.86279
+>>> Epoch 18800/20000 | elbo_sur=3.08586 | logLL=1.56791 | kl_sur=-30.35892
+>>> Epoch 18900/20000 | elbo_sur=3.38537 | logLL=1.60393 | kl_sur=-35.62873
+>>> Epoch 19000/20000 | elbo_sur=3.14136 | logLL=1.62474 | kl_sur=-30.33229
+>>> Epoch 19100/20000 | elbo_sur=3.21925 | logLL=1.62672 | kl_sur=-31.85054
+>>> Epoch 19200/20000 | elbo_sur=3.77009 | logLL=1.62590 | kl_sur=-42.88393
+>>> Epoch 19300/20000 | elbo_sur=3.44649 | logLL=1.63726 | kl_sur=-36.18443
+>>> Epoch 19400/20000 | elbo_sur=3.11983 | logLL=1.64627 | kl_sur=-29.47131
+>>> Epoch 19500/20000 | elbo_sur=3.34983 | logLL=1.63356 | kl_sur=-34.32550
+>>> Epoch 19600/20000 | elbo_sur=2.96448 | logLL=1.57073 | kl_sur=-27.87514
+>>> Epoch 19700/20000 | elbo_sur=3.21188 | logLL=1.62250 | kl_sur=-31.78759
+>>> Epoch 19800/20000 | elbo_sur=3.42737 | logLL=1.58360 | kl_sur=-36.87527
+>>> Epoch 19900/20000 | elbo_sur=3.36547 | logLL=1.64515 | kl_sur=-34.40640
+>>> Epoch 20000/20000 | elbo_sur=3.41023 | logLL=1.59242 | kl_sur=-36.35626
