@@ -52,7 +52,7 @@ def minibatch_woodbury_update(X, H_inv):
     Returns:
         H_new: (tf.Tensor) K x K covariance matrix after update.
     """
-    batch_size, dim_size = X.shape.as_list()
+    batch_size = tf.shape(X)[0]
 
     M0 = tf.eye(batch_size) + tf.matmul(X, tf.matmul(H_inv, X, transpose_b=True))
     M = tf.matrix_inverse(M0)
@@ -61,14 +61,5 @@ def minibatch_woodbury_update(X, H_inv):
 
     return H_new
 
-
-def get_Batch(data, label, batch_size):
-    print(data.shape, label.shape)
-    input_queue = tf.train.slice_input_producer([data, label], num_epochs=1, shuffle=False, capacity=32)
-    x_batch, y_batch = tf.train.batch(input_queue, batch_size=batch_size, num_threads=1, capacity=32,
-                                      allow_smaller_final_batch=False)
-    return x_batch
-
-
-
-
+def compute_inverse(X, sig_sq=1):
+    return np.linalg.inv(np.matmul(X.T, X) + sig_sq*np.identity(X.shape[1]))
