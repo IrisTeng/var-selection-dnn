@@ -61,5 +61,16 @@ def minibatch_woodbury_update(X, H_inv):
 
     return H_new
 
+
+def minibatch_interaction_update(Phi_y, rff_output, Y_batch):
+    return Phi_y + tf.matmul(rff_output, Y_batch, transpose_a=True)
+
+
 def compute_inverse(X, sig_sq=1):
-    return np.linalg.inv(np.matmul(X.T, X) + sig_sq*np.identity(X.shape[1]))
+    return np.linalg.inv(np.matmul(X.T, X) + sig_sq * np.identity(X.shape[1]))
+
+
+def split_into_batches(X, batch_size):
+    return [X[i:i + batch_size] for i in range(0, len(X), batch_size)]
+
+
