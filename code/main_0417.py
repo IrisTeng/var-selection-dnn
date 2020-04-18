@@ -9,21 +9,21 @@ from exp.toy import rbf_toy
 import exp.util as util
 import exp.kernelized as kernel_layers
 
-dataset = "rbf"
+dataset_name = "rbf"
 fixed_standarization = True
 opt_kernel_hyperparam = False
 opt_likelihood_variance = False
 ## data
-dataset = dict(rbf=rbf_toy)[dataset]()
+dataset = dict(rbf=rbf_toy)[dataset_name]()
 seed = 0
 n_test = 50
-EPOCHS = 15
-batch_size = 16
+EPOCHS = 1
+batch_size = 10
 data_dim = 1
 rff_dim = 10
 learning_rate = .01
 
-output_dir = 'output/rff_tst/'
+output_dir = './res/output/rff_tst/'
 if not os.path.exists(output_dir):
     os.makedirs(output_dir)
 
@@ -50,39 +50,26 @@ noise_std = dataset.y_std / std_y_standard
 
 xx = np.linspace(-2, 2, n_test).reshape(n_test, 1)
 
-
-
-
-
-
 # extract rff features
-
 model_graph = tf.Graph()
-
 model_sess = tf.Session(graph=model_graph)
 
 with model_graph.as_default():
-    X = tf.placeholder(dtype=tf.float32, shape=[None, data_dim])
-
-    Y_true = tf.placeholder(dtype=tf.float32, shape=[None, 1])
-
-    H_inv = tf.placeholder(dtype=tf.float32, shape=[rff_dim, rff_dim])
-
-    Phi_y = tf.placeholder(dtype=tf.float32, shape=[rff_dim, 1])
+    X = tf.placeholder(dtype=tf.float64, shape=[None, data_dim])
+    Y_true = tf.placeholder(dtype=tf.float64, shape=[None, 1])
+    H_inv = tf.placeholder(dtype=tf.float64, shape=[rff_dim, rff_dim])
+    Phi_y = tf.placeholder(dtype=tf.float64, shape=[rff_dim, 1])
 
     global_step = tf.Variable(0, trainable=False)
 
     rff_layer = kernel_layers.RandomFourierFeatures(output_dim=rff_dim,
-
                                                     kernel_initializer='gaussian',
-
                                                     scale=0.4)
-
     dense_layer = tf.keras.layers.Dense(units=1, activation=None,
                                         kernel_regularizer=keras.regularizers.l2(l=noise_std ** 2))
 
     ## define model
-    rff_output = rff_layer(X) * np.sqrt(2. / rff_dim)
+    rff_output = tf.cast(rff_layer(X) * np.sqrt(2. / rff_dim), dtype=tf.float64)
     Y_pred = dense_layer(rff_output)
 
     ## define loss
@@ -105,13 +92,10 @@ with model_graph.as_default():
                                                rff_output, transpose_b=True))
 
 ### Training and Evaluation ###
-
 X_batches = util.split_into_batches(train_x, batch_size) * EPOCHS
-
 Y_batches = util.split_into_batches(train_y, batch_size) * EPOCHS
 
 num_steps = X_batches.__len__()
-
 num_batch = int(num_steps / EPOCHS)
 
 with model_sess as sess:
@@ -120,9 +104,7 @@ with model_sess as sess:
     writer2 = tf.summary.FileWriter('./graphs', model_graph)
 
     rff_1 = sess.run(rff_output, feed_dict={X: X_batches[0]})
-
     weight_cov_val = util.compute_inverse(rff_1, sig_sq=noise_std ** 2)
-
     covl_xy_val = np.matmul(rff_1.T, Y_batches[0])
 
     for batch_id in range(1, num_batch):
@@ -136,7 +118,6 @@ with model_sess as sess:
                                                               Y_true: Y_batch,
                                                               H_inv: weight_cov_val,
                                                               Phi_y: covl_xy_val})
-
         except:
             print("\n================================\n"
                   "Problem occurred at Step {}\n"
@@ -145,25 +126,22 @@ with model_sess as sess:
         weight_tmp = weight_cov_val
         covl_tmp = covl_xy_val
 
-    for batch_id in range(0, num_steps):
-        X_batch = X_batches[batch_id]
-        Y_batch = Y_batches[batch_id]
-
-        ## update posterior mean/covariance
-        try:
-            _, summary = sess.run([train_mean, summary_op],
-                                  feed_dict={X: X_batch,
-                                             Y_true: Y_batch,
-                                             H_inv: weight_cov_val,
-                                             Phi_y: covl_xy_val})
-
-        except:
-            print("\n================================\n"
-                  "Problem occurred at Step {}\n"
-                  "================================".format(batch_id))
+    # for batch_id in range(0, num_steps):
+    #     X_batch = X_batches[batch_id]
+    #     Y_batch = Y_batches[batch_id]
+    #
+    #     ## update posterior mean/covariance
+    #     try:
+    #         _, summary = sess.run([train_mean, summary_op],
+    #                               feed_dict={X: X_batch,
+    #                                          Y_true: Y_batch,})
+    #
+    #     except:
+    #         print("\n================================\n"
+    #               "Problem occurred at Step {}\n"
+    #               "================================".format(batch_id))
 
     beta = np.matmul(weight_cov_val, covl_xy_val)
-
     weight_cov_val = weight_cov_val * noise_std ** 2
 
     ## prediction using woodbury-version covariance
@@ -179,24 +157,13 @@ with model_sess as sess:
                             H_inv: weight_cov_val})
 
     # compute rff, to compute population-version covariance later
-    rff_output_val = sess.run(rff_output, feed_dict={X: xx,
-                                                     Y_true: test_y,
-                                                     H_inv: weight_cov_val})
-    train_x_val = sess.run(rff_output, feed_dict={X: train_x,
-                                                  Y_true: test_y,
-                                                  H_inv: weight_cov_val})
-    tst_xx_val = sess.run(rff_output, feed_dict={X: test_x,
-                                                 Y_true: test_y,
-                                                 H_inv: weight_cov_val})
-
-
+    rff_output_val = sess.run(rff_output, feed_dict={X: xx})
+    train_x_val = sess.run(rff_output, feed_dict={X: train_x})
+    tst_xx_val = sess.run(rff_output, feed_dict={X: test_x})
 
 ## weight covariance matrix for all data, should equal to weight_tmp
 weight_cov_all = util.compute_inverse(train_x_val, sig_sq=noise_std ** 2)
-np.max(np.abs(weight_tmp - weight_cov_all))
-
-
-
+print(np.max(np.abs(weight_tmp - weight_cov_all)))
 
 # plot and compute summary statistics using woodbury-version covariance
 yy_pred_cov = pre_cov_xx + noise_std ** 2 * np.eye(n_test)
@@ -213,9 +180,6 @@ plt.ylim(-3, 3)
 plt.savefig(output_dir + '/rff_n_train=%d_rep=%d.png' % (n_train, 6))
 plt.close()
 
-
-
-
 ## plot and compute summary statistics using bayesian-lnr mean prediction
 
 pred_mean_xx = np.matmul(rff_output_val, beta)
@@ -230,10 +194,6 @@ plt.fill_between(xx[:, 0],
 plt.ylim(-3, 3)
 plt.savefig(output_dir + '/lnr_n_train=%d_rep=%d.png' % (n_train, 6))
 plt.close()
-
-
-
-
 
 ## plot and compute summary statistics using population-version covariance
 cov_xx_marg = np.matmul(rff_output_val, rff_output_val.T)
@@ -257,4 +217,3 @@ plt.fill_between(xx[:, 0],
 plt.ylim(-3, 3)
 plt.savefig(output_dir + '/rff-pop_n_train=%d_rep=%d.png' % (n_train, 6))
 plt.close()
-
