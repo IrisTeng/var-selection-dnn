@@ -56,6 +56,6 @@ covariates <- with(nhanes, cbind(age_z, agez_sq, male, bmicat2, bmicat3, educat1
                                  neutrophils_z, eosinophils_z, basophils_z, lncotinine_z)) 
 
 ## save
-write.csv(lnLTL_z,'y.csv')
-write.csv(mixture,'Z.csv')
-write.csv(covariates,'X.csv')
+write.csv(lnLTL_z,'y.csv', row.names=FALSE)
+write.csv(mixture,'Z.csv', row.names=FALSE)
+write.csv(covariates,'X.csv', row.names=FALSE)
