@@ -15,35 +15,35 @@ from rpy2.robjects.packages import importr
 
 def sin_toy(n_obs, dim_in, sig2=.01, seed=0):
     r = np.random.RandomState(seed)  
-    X = r.uniform(-5,5,(n_obs, dim_in))
+    Z = r.uniform(-5,5,(n_obs, dim_in))
     f = lambda x: np.sin(x)
-    Y = (f(X[:,0]) + r.normal(0,sig2,n_obs)).reshape(-1,1)
+    Y = (f(Z[:,0]) + r.normal(0,sig2,n_obs)).reshape(-1,1)
     
-    return X, Y.reshape(-1,1), sig2
+    return Z, Y.reshape(-1,1), sig2
 
-def rbf_toy(n_obs, dim_in, sig2=.01, seed_f=8, seed_xy=0):
+def rbf_toy(n_obs, dim_in, sig2=.01, seed_f=8, seed_zy=0):
 
     r_f = np.random.RandomState(seed_f)  
-    r_xy = np.random.RandomState(seed_xy)  
+    r_zy = np.random.RandomState(seed_zy)  
     
     # sample 1D function
     n_obs_sample = 500
     sig2_f = .1
     kernel = GPy.kern.RBF(input_dim=1, variance=1, lengthscale=1)
-    X = r_f.uniform(-5,5,(n_obs_sample,1))
-    f = r_f.multivariate_normal(np.zeros(n_obs_sample), kernel.K(X), 1).reshape(-1,1)
+    Z = r_f.uniform(-5,5,(n_obs_sample,1))
+    f = r_f.multivariate_normal(np.zeros(n_obs_sample), kernel.K(Z), 1).reshape(-1,1)
     Y = f + r_f.normal(0,sig2_f,(n_obs_sample,1))
     
     # fit gp to this function
-    m = GPy.models.GPRegression(X,Y,kernel)
+    m = GPy.models.GPRegression(Z,Y,kernel)
     m.Gaussian_noise.variance = sig2_f
     
-    # sample X data that is actually used (not using same random state)
+    # sample Z data that is actually used (not using same random state)
     # and get Y data by predicting using fitted GP
-    X = r_xy.uniform(-5, 5, (n_obs, dim_in))
-    Y,_ = m.predict(X[:,0].reshape(-1,1)) + r_xy.normal(0,sig2,(n_obs,1))
+    Z = r_zy.uniform(-5, 5, (n_obs, dim_in))
+    Y,_ = m.predict(Z[:,0].reshape(-1,1)) + r_zy.normal(0,sig2,(n_obs,1))
 
-    return X, Y.reshape(-1,1), sig2
+    return Z, Y.reshape(-1,1), sig2
 
 def bkmr_toy(n_obs, dim_in, sig2=.5):
     '''
@@ -60,10 +60,10 @@ def bkmr_toy(n_obs, dim_in, sig2=.5):
 
     out = bkmr.SimData(n=n, M=M, beta_true=0, sigsq_true = sigsq_true, Zgen="realistic")
 
-    X = np.asarray(out.rx2['Z'])
-    y = np.asarray(out.rx2['y'])
+    Z = np.asarray(out.rx2['Z'])
+    Y = np.asarray(out.rx2['y'])
     
-    return X, Y.reshape(-1,1), sig2
+    return Z, Y.reshape(-1,1), sig2
 
 def workshop_data(n_obs_samp=None, dim_in_samp=None, dir_in='../../data/workshop', seed=0):
     '''
@@ -94,17 +94,30 @@ def workshop_data(n_obs_samp=None, dim_in_samp=None, dir_in='../../data/workshop
     return Z, X, Y.reshape(-1,1)
     
 
-def load_toy_data(toy_name, n_obs=None, dim_in=None, seed=0):
+def load_data(toy_name, n_obs, dim_in, seed=0):
+    '''
+    returns:
+        Z: mixture components
+        X: covariates
+        Y: outcome
+        sig2: observation variance
+    '''
     if toy_name == 'sin':
-        return sin_toy(n_obs, dim_in, seed=seed)
+        Z, Y, sig2 = sin_toy(n_obs, dim_in, seed=seed)
+        X = None
     elif toy_name == 'rbf':
-        return rbf_toy(n_obs, dim_in, seed_xy=seed)
+        Z, Y, sig2 = rbf_toy(n_obs, dim_in, seed_zy=seed)
+        X = None
     elif toy_name == 'bkmr':
-        return rbf_toy(n_obs, dim_in)
+        Z, Y, sig2 = rbf_toy(n_obs, dim_in)
+        X = None
     elif toy_name == 'workshop':
-        return workshop_data() + (None,)
+        Z, X, Y = workshop_data(n_obs, dim_in, seed=seed)
+        sig2 = None
     else:
         print('toy not recognized')
+
+    return Z, X, Y, sig2
 
 ## posterior metrics
 

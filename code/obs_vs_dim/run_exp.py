@@ -8,11 +8,11 @@ import util
 import models
 
 parser = argparse.ArgumentParser()
-parser.add_argument('--toy', type=str, default='rbf')
+parser.add_argument('--dataset_name', type=str, default='rbf')
 parser.add_argument('--dir_out', type=str, default='output/')
 
-parser.add_argument('--opt_likelihood_variance', type=bool, default=False)
-parser.add_argument('--opt_kernel_hyperparam', type=bool, default=True)
+parser.add_argument('--opt_likelihood_variance', action='store_true')
+parser.add_argument('--opt_kernel_hyperparam', action='store_true')
 
 parser.add_argument('--kernel_lengthscale', type=float, default=1.0)
 parser.add_argument('--kernel_variance', type=float, default=1.0)
@@ -55,9 +55,9 @@ for i, n_obs in enumerate(n_obs_list):
         for k in range(args.n_rep):
             seed += 1
 
-            X, Y, sig2 = util.load_toy_data(args.toy, n_obs=n_obs, dim_in=dim_in, seed=seed)
+            Z, X, Y, sig2 = util.load_data(args.dataset_name, n_obs=n_obs, dim_in=dim_in, seed=seed)
             
-            m = models.GPyVarImportance(X, Y, sig2=sig2, fix_sig2=not args.opt_likelihood_variance,\
+            m = models.GPyVarImportance(Z, Y, sig2=sig2, fix_sig2=not args.opt_likelihood_variance,\
                 lengthscale=args.kernel_lengthscale, variance=args.kernel_variance)
 
             m.train()
