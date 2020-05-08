@@ -1,8 +1,11 @@
 import numpy as np
+import pandas as pd
 from scipy.stats import multivariate_normal
 import matplotlib.pyplot as plt
 import GPy
 import seaborn as sns
+import os
+import sys
 
 import rpy2.robjects as robjects
 from rpy2.robjects.packages import importr
@@ -62,16 +65,44 @@ def bkmr_toy(n_obs, dim_in, sig2=.5):
     
     return X, Y.reshape(-1,1), sig2
 
-def workshop_code():
+def workshop_data(n_obs_samp=None, dim_in_samp=None, dir_in='../../data/workshop', seed=0):
+    '''
+    randomly samples observations and mixture components. 
+    by default uses all observations and mixture components.
+
+    used in bkmr as:
+    kmbayes(y=lnLTL_z, Z=lnmixture_z, X=covariates)
+    ''' 
+
+    Z=pd.read_csv(os.path.join(dir_in, 'Z.csv'), header=0).to_numpy() # lnmixture_z
+    X=pd.read_csv(os.path.join(dir_in, 'X.csv'), header=0).to_numpy() # covariates
+    Y=pd.read_csv(os.path.join(dir_in, 'y.csv'), header=0).to_numpy() # lnLTL_z
+
+    # randomly sample observations
+    if n_obs_samp is not None:
+        r = np.random.RandomState(seed) 
+        obs_keep = r.choice(Z.shape[0], n_obs_samp, replace=False)
+        Z = Z[obs_keep,:]
+        X = X[obs_keep,:]
+        Y = Y[obs_keep]
+
+    # randomly sample mixture components
+    if dim_in_samp is not None:
+        r = np.random.RandomState(seed+1) 
+        Z = Z[:,r.choice(Z.shape[1], dim_in_samp, replace=False)]
+
+    return Z, X, Y.reshape(-1,1)
     
 
-def load_toy_data(toy_name, n_obs, dim_in, seed=0):
+def load_toy_data(toy_name, n_obs=None, dim_in=None, seed=0):
     if toy_name == 'sin':
         return sin_toy(n_obs, dim_in, seed=seed)
     elif toy_name == 'rbf':
         return rbf_toy(n_obs, dim_in, seed_xy=seed)
     elif toy_name == 'bkmr':
         return rbf_toy(n_obs, dim_in)
+    elif toy_name == 'workshop':
+        return workshop_data() + (None,)
     else:
         print('toy not recognized')
 
