@@ -11,12 +11,6 @@ parser = argparse.ArgumentParser()
 parser.add_argument('--dataset_name', type=str, default='rbf')
 parser.add_argument('--dir_out', type=str, default='output/')
 
-parser.add_argument('--opt_likelihood_variance', action='store_true')
-parser.add_argument('--opt_kernel_hyperparam', action='store_true')
-
-parser.add_argument('--kernel_lengthscale', type=float, default=1.0)
-parser.add_argument('--kernel_variance', type=float, default=1.0)
-
 parser.add_argument('--n_obs_min', type=int, default=10)
 parser.add_argument('--n_obs_max', type=int, default=100)
 parser.add_argument('--n_obs_step', type=int, default=10)
@@ -28,6 +22,20 @@ parser.add_argument('--dim_in_max', type=int, default=5)
 parser.add_argument('--dim_in_step', type=int, default=2)
 
 parser.add_argument('--n_rep', type=int, default=2)
+
+parser.add_argument('--model', type=str, default='GP', help='select "GP" or "RFF"')
+
+# GP options
+parser.add_argument('--opt_likelihood_variance', action='store_true')
+parser.add_argument('--opt_kernel_hyperparam', action='store_true')
+parser.add_argument('--kernel_lengthscale', type=float, default=1.0)
+parser.add_argument('--kernel_variance', type=float, default=1.0)
+
+# RFF options
+parser.add_argument('--rff_dim', type=int, default=1200)
+parser.add_argument('--batch_size', type=int, default=16)
+parser.add_argument('--epochs', type=int, default=16)
+
 
 args = parser.parse_args()
 
@@ -57,12 +65,17 @@ for i, n_obs in enumerate(n_obs_list):
 
             Z, X, Y, sig2 = util.load_data(args.dataset_name, n_obs=n_obs, dim_in=dim_in, seed=seed)
 
-            m = models.GPyVarImportance(Z, Y, sig2=sig2, \
-                opt_kernel_hyperparam=args.opt_kernel_hyperparam, \
-                opt_sig2=args.opt_likelihood_variance,\
-                lengthscale=args.kernel_lengthscale, variance=args.kernel_variance)
+            if args.model=='GP':
+                m = models.GPyVarImportance(Z, Y, sig2=sig2, \
+                    opt_kernel_hyperparam=args.opt_kernel_hyperparam, \
+                    opt_sig2=args.opt_likelihood_variance,\
+                    lengthscale=args.kernel_lengthscale, variance=args.kernel_variance)
 
-            m.train()
+                m.train()
+            
+            elif args.model=='RFF':
+                m = models.RffVarImportance(Z)
+                m.train(Z, Y, sig2, rff_dim=args.rff_dim, batch_size=args.batch_size, epochs=args.epochs)
 
             psi_est = m.estimate_psi(Z)
             res['psi_mean'][i,j,k,:dim_in] = psi_est[0]
