@@ -190,5 +190,5 @@ def plot_results_dist(data, dim_in, n_obs_list, data_true=None, fig=None, ax=Non
 
 def arrange_full(start, stop, step): 
     # so, e.g., np.arrange(1,10,1) returns [1,2,...,10] instead of [1,2,...,9]
-    return np.arange(start, stop+((stop-step)%stop==0), step) 
+    return np.arange(start, stop+((stop-start)%step==0), step) 
 
