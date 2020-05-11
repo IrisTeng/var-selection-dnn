@@ -12,16 +12,23 @@ import exp.kernelized as kernel_layers
 
 
 class GPyVarImportance(object):
-    def __init__(self, X, Y, sig2, fix_sig2=True, lengthscale=1.0, variance=1.0):
+    def __init__(self, X, Y, sig2, opt_sig2=True, opt_kernel_hyperparam=True, lengthscale=1.0, variance=1.0):
         super().__init__()
 
         self.dim_in = X.shape[1]
         self.kernel = GPy.kern.RBF(input_dim=self.dim_in)
         self.model = GPy.models.GPRegression(X,Y,self.kernel)
         self.model.Gaussian_noise.variance = sig2
+
+        self.opt_sig2 = opt_sig2
+        self.opt_kernel_hyperparam = opt_kernel_hyperparam
         
-        if fix_sig2:
+        if not opt_sig2:
             self.model.Gaussian_noise.fix()
+
+        if not opt_kernel_hyperparam:
+            self.model.kern.lengthscale.fix()
+            self.model.kern.variance.fix()
         
     def train(self):
         self.model.optimize_restarts(num_restarts = 10, verbose=False)

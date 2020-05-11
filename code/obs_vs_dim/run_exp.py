@@ -57,7 +57,9 @@ for i, n_obs in enumerate(n_obs_list):
 
             Z, X, Y, sig2 = util.load_data(args.dataset_name, n_obs=n_obs, dim_in=dim_in, seed=seed)
 
-            m = models.GPyVarImportance(Z, Y, sig2=sig2, fix_sig2=not args.opt_likelihood_variance,\
+            m = models.GPyVarImportance(Z, Y, sig2=sig2, \
+                opt_kernel_hyperparam=args.opt_kernel_hyperparam, \
+                opt_sig2=args.opt_likelihood_variance,\
                 lengthscale=args.kernel_lengthscale, variance=args.kernel_variance)
 
             m.train()
