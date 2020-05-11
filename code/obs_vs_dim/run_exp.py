@@ -56,13 +56,13 @@ for i, n_obs in enumerate(n_obs_list):
             seed += 1
 
             Z, X, Y, sig2 = util.load_data(args.dataset_name, n_obs=n_obs, dim_in=dim_in, seed=seed)
-            
+
             m = models.GPyVarImportance(Z, Y, sig2=sig2, fix_sig2=not args.opt_likelihood_variance,\
                 lengthscale=args.kernel_lengthscale, variance=args.kernel_variance)
 
             m.train()
 
-            psi_est = m.estimate_psi(X)
+            psi_est = m.estimate_psi(Z)
             res['psi_mean'][i,j,k,:dim_in] = psi_est[0]
             res['psi_var'][i,j,k,:dim_in] = psi_est[1]
 
